@@ -1,0 +1,270 @@
+# HG changeset patch
+# User shelve@localhost
+# Date 1451418460 18000
+#      Tue Dec 29 14:47:40 2015 -0500
+# Node ID 01491f1083fa6c446cb059228e3510a538e84e26
+# Parent  fb03826a15799eb4dc35d438b2beaba0f82e6e07
+changes to: added archer walk animations
+
+diff --git a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/AimAnimation.java b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/AimAnimation.java
+--- a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/AimAnimation.java
++++ b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/AimAnimation.java
+@@ -9,11 +9,17 @@
+  * Created by jprevoe on 12/24/15.
+  */
+ public class AimAnimation extends UnitAnimation {
+-    public SpriteState getBetweenTurnSpriteState() {
+-        return new SpriteState(CharacterAnimation.MELEE_AIM, 0);
++    private final CharacterAnimation mAnimation;
++
++    public AimAnimation(CharacterAnimation animation) {
++        mAnimation = animation;
+     }
+ 
+-    public static AimAnimation getAimAttackAnimation() {
+-        return new AimAnimation();
++    public SpriteState getBetweenTurnSpriteState() {
++        return new SpriteState(mAnimation, 0);
++    }
++
++    public static AimAnimation getAimAttackAnimation(CharacterAnimation animation) {
++        return new AimAnimation(animation);
+     }
+ }
+diff --git a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/RangedAttackAnimation.java b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/RangedAttackAnimation.java
+new file mode 100644
+--- /dev/null
++++ b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/RangedAttackAnimation.java
+@@ -0,0 +1,15 @@
++package com.android.jprevoe.wizarddefense.Actor.Actions.Attacks;
++
++import com.android.jprevoe.wizarddefense.Actor.Animation.BasicAttackAnimation;
++import com.android.jprevoe.wizarddefense.Actor.Position;
++
++/**
++ * Created by jprevoe on 12/26/15.
++ */
++public class RangedAttackAnimation extends BasicAttackAnimation {
++    private RangedAttackAnimation(Position target, int duration) {
++        super(target, duration);
++    }
++
++    public
++}
+diff --git a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionAttack.java b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionAttack.java
+--- a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionAttack.java
++++ b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionAttack.java
+@@ -11,6 +11,7 @@
+ import com.android.jprevoe.wizarddefense.Actor.Animation.BasicAttackAnimation;
+ import com.android.jprevoe.wizarddefense.Actor.Animation.NoAnimation;
+ import com.android.jprevoe.wizarddefense.Actor.Animation.UnitAnimation;
++import com.android.jprevoe.wizarddefense.Actor.CharacterAnimation;
+ import com.android.jprevoe.wizarddefense.Actor.Position;
+ import com.android.jprevoe.wizarddefense.Actor.Unit;
+ import com.android.jprevoe.wizarddefense.Grid.BattleGrid;
+@@ -55,7 +56,7 @@
+ 
+     @Override
+     public UnitAnimation getAnimation(Unit unit) {
+-        UnitAnimation anim = AimAnimation.getAimAttackAnimation();
++        UnitAnimation anim = getAimAnimation();
+         if (mTurnsSpentActing == mWindupTurns - 1) {
+             anim = BasicAttackAnimation.getBasicAttackAnimation(
+                 mTarget,
+@@ -70,6 +71,10 @@
+         return anim;
+     }
+ 
++    protected UnitAnimation getAimAnimation() {
++        return AimAnimation.getAimAttackAnimation(CharacterAnimation.MELEE_AIM);
++    }
++
+     @Override
+     public void animationCallback(int timeType, Unit unit) {
+         super.animationCallback(timeType, unit);
+diff --git a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionRangedAttack.java b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionRangedAttack.java
+--- a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionRangedAttack.java
++++ b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionRangedAttack.java
+@@ -1,8 +1,10 @@
+ package com.android.jprevoe.wizarddefense.Actor.Actions.Attacks;
+ 
+ import com.android.jprevoe.wizarddefense.Actor.Actions.Attacks.Targetters.BasicActionTargetter;
++import com.android.jprevoe.wizarddefense.Actor.Actions.Helpers.UnitActionListener;
+ import com.android.jprevoe.wizarddefense.Actor.Animation.BasicAttackAnimation;
+ import com.android.jprevoe.wizarddefense.Actor.Animation.UnitAnimation;
++import com.android.jprevoe.wizarddefense.Actor.CharacterAnimation;
+ import com.android.jprevoe.wizarddefense.Actor.Unit;
+ import com.android.jprevoe.wizarddefense.Spells.Projectiles.Projectile;
+ import com.android.jprevoe.wizarddefense.Spells.Projectiles.ProjectileAnimations;
+@@ -43,6 +45,27 @@
+         }
+     }
+ 
++    protected UnitAnimation getAimAnimation() {
++        return new AimAnimation(CharacterAnimation.RANGED_AIM);
++    }
++
++    @Override
++    public UnitAnimation getAnimation(Unit unit) {
++        UnitAnimation anim = getAimAnimation();
++        if (mTurnsSpentActing == mWindupTurns - 1) {
++            anim = RangedAttackAnimation.getRangedAttackAnimation(
++                    mTarget,
++                    unit.getPosition(),
++                    ANIMATION_TIME
++            );
++            anim.addAnimationListener(
++                    RangedAttackAnimation.ATTACK_CONNECTED,
++                    new UnitActionListener(this, unit)
++            );
++        }
++        return anim;
++    }
++
+     @Override
+     public void animationCallback(int timeType, final Unit unit) {
+         Projectile projectile = Projectile.create(unit.getPosition(),
+diff --git a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/CharacterAnimation.java b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/CharacterAnimation.java
+--- a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/CharacterAnimation.java
++++ b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/CharacterAnimation.java
+@@ -7,5 +7,9 @@
+     IDLE,
+     MELEE_AIM,
+     MELEE_ATTACK,
+-    MELEE_RETREAT, WALK
++    MELEE_RETREAT,
++    RANGED_AIM,
++    RANGED_ATTACK,
++    RANGED_RETREAT,
++    WALK
+ }
+diff --git a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/UnitStats/EnemyUnitStats/ArcherUnit.java b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/UnitStats/EnemyUnitStats/ArcherUnit.java
+--- a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/UnitStats/EnemyUnitStats/ArcherUnit.java
++++ b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/UnitStats/EnemyUnitStats/ArcherUnit.java
+@@ -24,10 +24,19 @@
+         });
+ 
+         mAnimations.put(CharacterAnimation.IDLE, new String[]{"character_archer_1"});
++
++        mAnimations.put(CharacterAnimation.RANGED_AIM, new String[]{"character_archer_4"});
++        mAnimations.put(CharacterAnimation.RANGED_ATTACK, new String[]{"character_archer_5"});
++        mAnimations.put(CharacterAnimation.RANGED_RETREAT, new String[]{"character_archer_6"});
+     }
+ 
+     @Override
+     protected float GetStatHealth() {
+         return 1;
+     }
++
++    @Override
++    public float getImageScale() {
++        return (float)(40.0 / 32.0);
++    }
+ }
+diff --git a/app/src/main/res/drawable/character_archer_1.png b/app/src/main/res/drawable/character_archer_1.png
+index 4c2d22f95529c7511f73f60a3d68bdc7bcd434ab..3e6f89985d4d776937d0d06ce938e726b37b1ddf
+GIT binary patch
+literal 577
+zc$@)20>1r;P)<h;3K|Lk000e1NJLTq001Ze001Zm1^@s6jQ+T70006ANkl<ZSV!%b
+zF;c@Y5Jjbe6Ht+cnl$klpv)DZ<^l}NB(+m8G@Jph0W~G5as#L+sVK~R*(+9>NY+aB
+zOqg*RNA_y>`R{5aYjxm1ec*g*0xZqYq~N5WuRzl@4c*gPk6t380D#-=b`JA=J{S3r
+zraa3zsR#w}U*FBzxc8q~{$kMO4sTByH9Kl!eEbX!Sq=y=A96r7%K<qY&lS`h05l&E
+zVE9pbLxofbng<wCEmrNB^_c_6TcOgArw&&AeQn39)yjF+wM|h>k+D+Bf!l0024KBj
+zn`>Ryd&eA93YiT^a0G}Ah6D34YzT5pK&u{yO9jk@lqmSW08w|Ln%h^Cu+2$xmV)dw
+zV<AHw2C(b^WXvRWC<cUc9uVV~OBe6$>~A&uwiu5JND5HkeSok5Bv+5W*jRvwYZnTg
+zRiPd!wp=calwS{(xrdq~JN`n*a%|J#&yo$hNfz++s-1fN)NaY!?bciui$yfHL_L$O
+z#5b|W{7y#20flfPfl>h7y|?=ep@ngL^Bz^s|7`IWO`k}8fDRmQFC4I{s$e2`?fLB{
+zrRDSj@&@ZuP?|5E+xF%?Z>W*`ry8=umf1D+AV(4)9P%LkK_QYR3mNiJ3TV~@DZv$@
+z?X0hcFdy?GKB6M^DM(DtD(-Hk&MopG4U*WEhBKQ0OSPO7oD?iopmhE(ysjEJP=^e2
+P00000NkvXXu0mjfU7-D~
+
+diff --git a/app/src/main/res/drawable/character_archer_2.png b/app/src/main/res/drawable/character_archer_2.png
+index 8aa551b131bc1015ef4252d4dd6e889fbe6391e9..b20f1627c6a8864aabfff9e162dfcec70c50c056
+GIT binary patch
+literal 571
+zc$@({0>u4^P)<h;3K|Lk000e1NJLTq001Ze001Zm1^@s6jQ+T700064Nkl<ZSV!%b
+zu~Ne@42JE2Ct#urGhLErfU&OtGcUlwT{@=&$HFtfYrx!*PJIKI7?~K%$%%|?Y&VkA
+zyK)yVsS{iJ{7aTytq#2D1Lso{U}=OV1t$eV1&lEU-)XJ)o+2y<0Jq(4J?8m*&a%M`
+zxyU%G2nxb)eK+g;-hYVf<)F(A-kumWJL-JAe~%7X4hUc&<cMmP15!8|D^PO;P&pug
+zLBsH-5~&bW2AEPUm+iv*lmOCFsPyBhht+;vyMEI&-nYJNvV5`zE2TWR)oNt{mdmAm
+zwrv~jQ&29X7!ctQ5Dpj$O#3hfA@>RB)T3}i0i}=}1^*Wy<XtM~VmS$8C1DmRNNzI@
+zGF4#!mRx}BFisw_0l_$R2>q8!A8&p3yPLzY(2v~Gk{oP6Q~({v0AUP3QuXM<Vv7V}
+zV^QD$!hE+;Pz6vA6<aJ8*2m{VZQnu8;W)aWFyy(giveG+x~b<+-I2W6Z0xhDs@#ER
+zfkQwjTm8oR!!s1nUGsYx6$RwL(cKKTg40L@=%2m)-w@mw$2V_T<-!etrHRU%QqP7y
+z8;{`ZrR9YJ)^(jT6Z-I?(N7fbViSghl3<uGp1bn4W3i&oyNp^uX!J%BUKI8PH+0nw
+zGLkn#ZHUz47-!{;m?koDSBS^-C9*XEiew{`CIu%2OBE=c{{#606gXYOWt#v1002ov
+JPDHLkV1gVh`?CN5
+
+diff --git a/app/src/main/res/drawable/character_archer_3.png b/app/src/main/res/drawable/character_archer_3.png
+index 7c19dd2a0190179414cd87e29856b590015107e9..4522ef03a3468bd5d0679969a27871d70f92f557
+GIT binary patch
+literal 580
+zc$@)50=xZ*P)<h;3K|Lk000e1NJLTq001Ze001Zm1^@s6jQ+T70006DNkl<ZSV!%b
+zJyOFk5QU|J6Ht+c8aMVCpv)CQ%>@{kv1_|vXgC90Bh)Ez<r_dnNkw7i$yu`!mTXB$
+zCd}B4|5mHdZ=W`b6i0r@Bj*z{U~GkE1!o0K1=_Z4>6w&r?-ucz0B}vyXv|5Hc;)ad
+zc~Ejv5enj3-Y>d&A3lQexuD|{-kr5#anjB4{=IX^ctC)ekULZ}9+1QFT0zYnfQADC
+z3<s6hW~4~aFhHAXF1H8zGX#*gLLr~dHLUXMroYegTzj`|n_hEz1q&fGxT>lYKv5Lx
+zT$bhFJqPuL3<e}P0>lpt2j=&PA;^6K_UduCseqx7J_`OXK={t)xgk#?Hl)l!3bNfy
+z4{7T#fMpvX73Sl^F~ELng~XT$$@zr1U$1n$&BgC(He)FVI9+YC7r_yv_d5p0A%_5w
+z6Oddzb4)Ct2FFWEiqKva>XBm0<x+)yK4$6}JV$ZHxJl|MJ6IHKxv7T$U$48Nm(QIG
+z>bh3vG)<kA^YPy(An#qcM*pL-aX?Qv{sE&(x&oAn=0Pol7RKrAn^QUSZ;QET#=JQ8
+z1==d!!m2Url~C^hm}Qx@tlWEMyP48*#sHmuBFL+kK`-|eFn2YSlq};?F$!=(AJc5Y
+zL5-b|m1Ez4_y%PKho7AchX5p@t$ub@;*fw79Pu|~1`Lvo4Vo346^vCNcKi>goftTH
+Sz;-wQ0000<MNUMnLSTY56#~Qn
+
+diff --git a/app/src/main/res/drawable/character_archer_4.png b/app/src/main/res/drawable/character_archer_4.png
+new file mode 100755
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..bacc7af707d2b5370d24a4cb1f397eef3acf75cd
+GIT binary patch
+literal 664
+zc$@*40%!e+P)<h;3K|Lk000e1NJLTq001Ze001Zm1^@s6jQ+T70007CNkl<ZSV!%a
+zJ5Iwu5Qf(UCqNXWp|+d&1R$Wy6(E#c00BxGH;E9U;Rrmg0aB<aN#k^sP#{Vwibb>b
+zIJ2vLdIbuS-8gn;XTJP1`)?Aq;#acbe5?bE?NFy+r=Y3;=bYoaBuRdKM1l$c++wki
+zn6oSk$`RV~R>@ICP!K*RXT7TK<$J4qHt6_-r<<Jh)~XtB-%iM)D4G!|io#jn8Q|3t
+z71E+60PemPZ0FYRkcbDQaP-%Jni^051m$K!#(f~$0|FRa*j|&=dQh=;He^mE+X0$X
+zv(3YDJ{zY3mjcL*^HQwTIYJviYK1Jh-jc8;U&qb!Xf%?(10Z6f44%ufWFHq9+rFt9
+zqIzp6paeIaPDRr3cr5Od$wd3Cg4Q77R+c4C)090OCE9kk21Gan1Z5~NeTEo>B!^E^
+zTX?DAR0;uX)T3~|fEq}z+Fn8RApI{um^;(VsWXW?MQO8_I9@@jf>;p71|e+@^QVA1
+zt9Uq&@t)IaH`9ym<a$4NiQ^TdDo7#WvkD0D6jJAhU@<<bdj*k1(kTG%0S;jXgMkSB
+zyvoHpoB#R138VB4R8@RDtd{QGRVToFJ{R|Xzi&+$(%ulj=06-P0u!cyfpGK(I0bSB
+zR6I*QG<=-9^^+H?a_Rx0$z^450ZMSxUMOIm=f<`okh=S6F59R%0m0{V!wv<o&HMMF
+zoSKWHN1E2dky)F%k;4lRs?#Fs9|em74WubYETGsEy3+!WGY=;a18m6=HG?=R(k`xF
+yy3|+avQ>`IB7wFUAKn4RYS<~*DHy9j?D`+B>M}TNSdD)G0000<MNUMnLSTYb6(*bj
+
+diff --git a/app/src/main/res/drawable/character_archer_5.png b/app/src/main/res/drawable/character_archer_5.png
+new file mode 100755
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..f4c4bf9b989161ea219031af2092704c75d8718c
+GIT binary patch
+literal 641
+zc$@)&0)G98P)<h;3K|Lk000e1NJLTq001Ze001Zm1^@s6jQ+T70006=Nkl<ZSV!%b
+ztxm*15XWZ)XAuO!8FXt7i69WL_X?o#gaEmU<3uln5E32%c!rapkySJpBnW~)pb#aq
+z?JU!!AG_T<IMFqC-EL=o{m;j41<d&nbIu1XplgI$1zQDm1(GC5Xif+*^AxdifN*gf
+z=a_xpx3Xay@<zr<MN|;~i{ozU_x!byy((yTgGVa~bQe+|FJDuKbO%H*9de3lx&v}J
+z9xGIH3ZTsa5ex@~w=9tyL7M@VsaBQk4fC@JAa8{ru2yqc;pe`(9t;M#ds*AG@@cgg
+z0CI5S@mK-`K_Gv_Ff6?0ptg{W0SS%(af6|`^*Df?+n;N`W|n|TJr1V>BHYqp1ifBQ
+z0i(ifhXfl)8wG0t@Am{ecp>!reFazohwo+N+h|di>6L)E=57}xAVNh^1f5O?eBW2<
+zp>n9?zbHuMN`-<dBH-JZ4_i0sT?+He0nr)HL%m875&=Ih*I@bNQNnqir&`XR0CLD8
+zz>TK>77rqrOeWyc4{dTVi;_C8>WZjdh?Pvm@_w-<TMi8y^^7ZtZ3nqVt?z83(FnGm
+zPhs;q0jy{o98Nk+58=kbm@dr8#(NrvL_iwD;ZWx%I6hzNzjlGXz3HDJWw2UE6_jnm
+zt^+I#DfKfJvR`V^1aB=xFH;xtT0m?WdKHp$?XaNRN~kARJ)a#kN;!-G5r{j{4+<4Y
+zuOQ28xB|-7LQ3#B(h<v`B4vS9*r*h#PC=DQ1xaT5tdk8}C#A(Os~at#tFo<vt%9x!
+bxIX_4=2jgz(luqg00000NkvXXu0mjfHZ~0I
+
+diff --git a/app/src/main/res/drawable/character_archer_6.png b/app/src/main/res/drawable/character_archer_6.png
+new file mode 100755
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..f398c4a1c21491399b829393c8ef39d5a4e5bf61
+GIT binary patch
+literal 601
+zc$@)Q0;c_mP)<h;3K|Lk000e1NJLTq001Ze001Zm1^@s6jQ+T70006YNkl<ZSV!%b
+zAy&jN5QY=M2~ey-v!<13>|Oyh7vRBrt?mjQhBI)6m7tNV>J304QHb&;-AO0Iv`LyS
+ztY{1^JIQ?gGxMj_>cEFSa6UByrtZ+J;H)55plO;0|EIOydx=CP0JyrY9p>e78MQ|2
+zmXBH-RRjg$THh_&y!RiY)*FIOU-0&%QH!HC$NTr>km-N`#vvzEGaZn^(Y*pSCjcD}
+z2w*U9d;1DW21O_E=Jy7OdHYlws`jovtyAq>YLH<JAhklJA5R^u>g(Fx7e(Rx20+9{
+z)jj|nxb=E%0Lrp7f2*nz?>Q(0g}|A(NaM7C2#0{63<ak55QC89@CnKt6tsH?5l#X;
+zuS<3D)B&Ri3^FKpP*4mYz#ZSbsVvK^q6Yy85YLxNy`EKSwOXk>&uvZqD<C!q1%zvW
+z+-x>ZiT~LaLso1E+M&<@*vTA_$AvcNs2W6B0Fo!B+l&fIez*@n;BtJB_?h)VXcDMH
+z+-7JNIzs&q=fo%|0!lvma;1&UY`0tW`H-7yo3MQe56&AJ*kx#C^!htM!VusbL46B_
+z0J>){`wa2H^3Rs3&*EP-hjoXEeBVtpPI?$$P5KmUz&51Ao?6Y$3;9}RE{vi1J#)L7
+z_0)ivguf^Z6uq6#LD`#7uTVY(P3NK#^kK*e;#<RX)W8~(ys%1b>jUGPGir_4BtBP|
+n{P!6!Rnl3(S;15VQs@5w{G}8);wg^=00000NkvXXu0mjfb(asG
+

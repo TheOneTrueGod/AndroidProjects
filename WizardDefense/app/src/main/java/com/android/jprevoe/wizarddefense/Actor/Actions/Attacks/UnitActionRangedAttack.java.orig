@@ -1,0 +1,7 @@
+package com.android.jprevoe.wizarddefense.Actor.Actions.Attacks;
+
+/**
+ * Created by jprevoe on 12/31/15.
+ */
+public class UnitActionRangedAttack {
+}

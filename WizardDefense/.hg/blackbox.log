@@ -1,0 +1,834 @@
+2015/11/12 09:02:44 jprevoe (55749)> add .
+2015/11/12 09:02:44 jprevoe (55749)> add . exited 0 after 0.18 seconds
+2015/11/12 09:02:47 jprevoe (55768)> commit -m Init
+2015/11/12 09:02:49 jprevoe (55768)> updated served branch cache in 0.0006 seconds
+2015/11/12 09:02:49 jprevoe (55768)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/12 09:02:49 jprevoe (55768)> commit -m Init exited 0 after 2.72 seconds
+2015/11/12 09:02:51 jprevoe (55787)> sl
+2015/11/12 09:02:51 jprevoe (55787)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/11/12 09:02:51 jprevoe (55787)> sl exited 0 after 0.09 seconds
+2015/11/12 09:02:53 jprevoe (55806)> status
+2015/11/12 09:02:53 jprevoe (55806)> status exited 0 after 0.09 seconds
+2015/11/12 09:04:24 jprevoe (55986)> add .
+2015/11/12 09:04:24 jprevoe (55986)> add . exited 0 after 0.19 seconds
+2015/11/12 09:04:34 jprevoe (56012)> commit -m 'Centering battle display'
+2015/11/12 09:04:34 jprevoe (56012)> updated served branch cache in 0.0015 seconds
+2015/11/12 09:04:34 jprevoe (56012)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/12 09:04:34 jprevoe (56012)> commit -m 'Centering battle display' exited 0 after 0.50 seconds
+2015/11/12 09:04:37 jprevoe (56030)> status
+2015/11/12 09:04:37 jprevoe (56030)> status exited 0 after 0.10 seconds
+2015/11/12 09:04:38 jprevoe (56049)> sl
+2015/11/12 09:04:38 jprevoe (56049)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/11/12 09:04:38 jprevoe (56049)> sl exited 0 after 0.08 seconds
+2015/11/12 09:04:42 jprevoe (56070)> log
+2015/11/12 09:04:42 jprevoe (56070)> writing .hg/cache/tags2-visible-directaccess-nowarn with 0 tags
+2015/11/12 09:04:42 jprevoe (56070)> log exited 0 after 0.08 seconds
+2015/11/12 09:10:44 jprevoe (56540)> status
+2015/11/12 09:10:44 jprevoe (56540)> status exited 0 after 0.35 seconds
+2015/11/12 09:10:57 jprevoe (56570)> status
+2015/11/12 09:10:57 jprevoe (56570)> status exited 0 after 0.13 seconds
+2015/11/12 09:11:28 jprevoe (56619)> status
+2015/11/12 09:11:28 jprevoe (56619)> status exited 0 after 0.13 seconds
+2015/11/12 09:11:41 jprevoe (56658)> status
+2015/11/12 09:11:41 jprevoe (56658)> status exited 0 after 0.12 seconds
+2015/11/12 09:11:57 jprevoe (56693)> add .
+2015/11/12 09:11:57 jprevoe (56693)> add . exited 0 after 0.10 seconds
+2015/11/12 09:12:19 jprevoe (56729)> commit -m 'Centering battle display view'
+2015/11/12 09:12:19 jprevoe (56729)> updated served branch cache in 0.0012 seconds
+2015/11/12 09:12:19 jprevoe (56729)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/12 09:12:19 jprevoe (56729)> commit -m 'Centering battle display view' exited 0 after 0.47 seconds
+2015/11/12 09:12:23 jprevoe (56749)> status
+2015/11/12 09:12:23 jprevoe (56749)> status exited 0 after 0.10 seconds
+2015/11/12 09:12:29 jprevoe (56772)> status
+2015/11/12 09:12:29 jprevoe (56772)> status exited 0 after 0.09 seconds
+2015/11/12 09:15:25 jprevoe (56979)> status
+2015/11/12 09:15:25 jprevoe (56979)> status exited 0 after 0.19 seconds
+2015/11/12 09:15:27 jprevoe (57000)> status
+2015/11/12 09:15:27 jprevoe (57000)> status exited 0 after 0.12 seconds
+2015/11/12 09:15:35 jprevoe (57024)> commit .hgignore
+2015/11/12 09:15:42 jprevoe (57024)> updated served branch cache in 0.0013 seconds
+2015/11/12 09:15:42 jprevoe (57024)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/12 09:15:42 jprevoe (57024)> commit .hgignore exited 0 after 7.95 seconds
+2015/11/12 09:15:44 jprevoe (57051)> status
+2015/11/12 09:15:44 jprevoe (57051)> status exited 0 after 0.11 seconds
+2015/11/12 09:16:29 jprevoe (57114)> rm .gradle
+2015/11/12 09:16:29 jprevoe (57114)> rm .gradle exited 1 after 0.11 seconds
+2015/11/12 09:16:32 jprevoe (57140)> status
+2015/11/12 09:16:32 jprevoe (57140)> status exited 0 after 0.11 seconds
+2015/11/12 09:16:39 jprevoe (57165)> forget .gradle
+2015/11/12 09:16:39 jprevoe (57165)> forget .gradle exited 0 after 0.08 seconds
+2015/11/12 09:16:40 jprevoe (57183)> status
+2015/11/12 09:16:41 jprevoe (57183)> status exited 0 after 0.10 seconds
+2015/11/12 09:16:47 jprevoe (57206)> commit -m 'Forgetting .gradle files'
+2015/11/12 09:16:47 jprevoe (57206)> updated served branch cache in 0.0013 seconds
+2015/11/12 09:16:47 jprevoe (57206)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/12 09:16:47 jprevoe (57206)> commit -m 'Forgetting .gradle files' exited 0 after 0.11 seconds
+2015/11/12 09:16:49 jprevoe (57224)> status
+2015/11/12 09:16:49 jprevoe (57224)> status exited 0 after 0.10 seconds
+2015/11/12 09:17:13 jprevoe (57268)> sl
+2015/11/12 09:17:13 jprevoe (57268)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/11/12 09:17:13 jprevoe (57268)> sl exited 0 after 0.12 seconds
+2015/11/12 09:17:15 jprevoe (57289)> log
+2015/11/12 09:17:15 jprevoe (57289)> writing .hg/cache/tags2-visible-directaccess-nowarn with 0 tags
+2015/11/12 09:17:15 jprevoe (57289)> log exited 0 after 0.09 seconds
+2015/11/12 09:17:23 jprevoe (57312)> co 3
+2015/11/12 09:17:23 jprevoe (57312)> co 3 exited -1 after 0.09 seconds
+2015/11/12 09:17:24 jprevoe (57319)> status
+2015/11/12 09:17:24 jprevoe (57319)> status exited 0 after 0.11 seconds
+2015/11/12 09:18:57 jprevoe (57501)> status
+2015/11/12 09:18:57 jprevoe (57501)> status exited 0 after 0.19 seconds
+2015/11/12 09:18:58 jprevoe (57517)> sl
+2015/11/12 09:18:58 jprevoe (57517)> sl exited 0 after 0.10 seconds
+2015/11/12 09:19:00 jprevoe (57537)> revert --all
+2015/11/12 09:19:00 jprevoe (57537)> revert --all exited 0 after 0.10 seconds
+2015/11/12 09:19:01 jprevoe (57555)> log
+2015/11/12 09:19:01 jprevoe (57555)> log exited 0 after 0.08 seconds
+2015/11/12 09:19:03 jprevoe (57572)> co 3
+2015/11/12 09:19:03 jprevoe (57572)> co 3 exited -1 after 0.11 seconds
+2015/11/12 09:19:11 jprevoe (57585)> status
+2015/11/12 09:19:11 jprevoe (57585)> status exited 0 after 0.11 seconds
+2015/11/12 09:19:35 jprevoe (57626)> status
+2015/11/12 09:19:35 jprevoe (57626)> status exited 0 after 0.11 seconds
+2015/11/12 09:20:01 jprevoe (57676)> purge
+2015/11/12 09:20:01 jprevoe (57676)> purge exited 0 after 0.12 seconds
+2015/11/12 09:20:03 jprevoe (57694)> status
+2015/11/12 09:20:03 jprevoe (57694)> status exited 0 after 0.11 seconds
+2015/11/12 09:20:04 jprevoe (57713)> log
+2015/11/12 09:20:04 jprevoe (57713)> log exited 0 after 0.08 seconds
+2015/11/12 09:20:05 jprevoe (57732)> co 3
+2015/11/12 09:20:05 jprevoe (57732)> co 3 exited -1 after 0.10 seconds
+2015/11/12 09:20:35 jprevoe (57765)> add .gradle
+2015/11/12 09:20:35 jprevoe (57765)> add .gradle exited 0 after 0.09 seconds
+2015/11/12 09:20:38 jprevoe (57783)> status
+2015/11/12 09:20:38 jprevoe (57783)> status exited 0 after 0.11 seconds
+2015/11/12 09:20:39 jprevoe (57802)> sl
+2015/11/12 09:20:39 jprevoe (57802)> sl exited 0 after 0.08 seconds
+2015/11/12 09:20:53 jprevoe (57831)> co 3
+2015/11/12 09:20:53 jprevoe (57831)> co 3 exited -1 after 0.11 seconds
+2015/11/12 09:21:49 jprevoe (57900)> status
+2015/11/12 09:21:49 jprevoe (57900)> status exited 0 after 0.10 seconds
+2015/11/12 09:21:56 jprevoe (57925)> add .
+2015/11/12 09:21:56 jprevoe (57925)> add . exited 0 after 0.09 seconds
+2015/11/12 09:21:58 jprevoe (57944)> status
+2015/11/12 09:21:58 jprevoe (57944)> status exited 0 after 0.09 seconds
+2015/11/12 09:22:01 jprevoe (57963)> sl
+2015/11/12 09:22:01 jprevoe (57963)> sl exited 0 after 0.08 seconds
+2015/11/12 09:22:02 jprevoe (57982)> co 3
+2015/11/12 09:22:02 jprevoe (57982)> co 3 exited -1 after 0.08 seconds
+2015/11/12 09:22:09 jprevoe (57993)> shelve
+2015/11/12 09:22:18 jprevoe (57993)> shelve exited 0 after 9.30 seconds
+2015/11/12 09:22:34 jprevoe (58033)> sl
+2015/11/12 09:22:35 jprevoe (58033)> sl exited 0 after 0.08 seconds
+2015/11/12 09:22:36 jprevoe (58052)> status
+2015/11/12 09:22:36 jprevoe (58052)> status exited 0 after 0.11 seconds
+2015/11/12 09:22:40 jprevoe (58073)> log
+2015/11/12 09:22:40 jprevoe (58073)> log exited 0 after 0.08 seconds
+2015/11/12 09:22:41 jprevoe (58092)> co 3
+2015/11/12 09:22:42 jprevoe (58092)> co 3 exited 0 after 0.18 seconds
+2015/11/12 09:22:44 jprevoe (58099)> status
+2015/11/12 09:22:44 jprevoe (58099)> status exited 0 after 0.14 seconds
+2015/11/12 09:23:16 jprevoe (58154)> strip 4
+2015/11/12 09:23:16 jprevoe (58154)> strip 4 exited 0 after 0.08 seconds
+2015/11/12 09:23:17 jprevoe (58172)> sl
+2015/11/12 09:23:17 jprevoe (58172)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/11/12 09:23:17 jprevoe (58172)> updated served branch cache in 0.0015 seconds
+2015/11/12 09:23:17 jprevoe (58172)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/12 09:23:18 jprevoe (58172)> sl exited 0 after 0.08 seconds
+2015/11/12 09:23:19 jprevoe (58191)> log
+2015/11/12 09:23:19 jprevoe (58191)> writing .hg/cache/tags2-visible-directaccess-nowarn with 0 tags
+2015/11/12 09:23:19 jprevoe (58191)> log exited 0 after 0.08 seconds
+2015/11/12 09:23:51 jprevoe (58240)> forget .gradle
+2015/11/12 09:23:51 jprevoe (58240)> forget .gradle exited 0 after 0.09 seconds
+2015/11/12 09:23:53 jprevoe (58258)> status
+2015/11/12 09:23:53 jprevoe (58258)> status exited 0 after 0.11 seconds
+2015/11/12 09:24:17 jprevoe (58302)> commit -m 'Updating .hgignore'
+2015/11/12 09:24:17 jprevoe (58302)> updated served branch cache in 0.0009 seconds
+2015/11/12 09:24:17 jprevoe (58302)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/12 09:24:17 jprevoe (58302)> commit -m 'Updating .hgignore' exited 0 after 0.12 seconds
+2015/11/12 09:24:24 jprevoe (58326)> status
+2015/11/12 09:24:24 jprevoe (58326)> status exited 0 after 0.11 seconds
+2015/11/12 09:24:31 jprevoe (58349)> forget app/build
+2015/11/12 09:24:31 jprevoe (58349)> forget app/build exited 0 after 0.10 seconds
+2015/11/12 09:24:38 jprevoe (58373)> commit -m 'Updating .hgignore'
+2015/11/12 09:24:39 jprevoe (58373)> updated served branch cache in 0.0012 seconds
+2015/11/12 09:24:39 jprevoe (58373)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/12 09:24:39 jprevoe (58373)> commit -m 'Updating .hgignore' exited 0 after 0.32 seconds
+2015/11/12 09:24:40 jprevoe (58391)> histedit
+2015/11/12 09:24:40 jprevoe (58391)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/11/12 09:24:57 jprevoe (58391)> updated served branch cache in 0.0005 seconds
+2015/11/12 09:24:57 jprevoe (58391)> wrote served branch cache with 1 labels and 2 nodes
+2015/11/12 09:24:57 jprevoe (58391)> histedit exited -1 after 16.80 seconds
+2015/11/12 09:25:01 jprevoe (58437)> status
+2015/11/12 09:25:01 jprevoe (58437)> status exited 0 after 0.10 seconds
+2015/11/12 09:25:10 jprevoe (58462)> histedit --abort
+2015/11/12 09:25:10 jprevoe (58462)> histedit --abort exited 0 after 0.07 seconds
+2015/11/12 09:25:11 jprevoe (58480)> status
+2015/11/12 09:25:11 jprevoe (58480)> status exited 0 after 0.08 seconds
+2015/11/12 09:25:12 jprevoe (58497)> sl
+2015/11/12 09:25:12 jprevoe (58497)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/11/12 09:25:12 jprevoe (58497)> sl exited 0 after 0.09 seconds
+2015/11/12 09:25:17 jprevoe (58521)> log
+2015/11/12 09:25:17 jprevoe (58521)> writing .hg/cache/tags2-visible-directaccess-nowarn with 0 tags
+2015/11/12 09:25:17 jprevoe (58521)> log exited 0 after 0.09 seconds
+2015/11/12 09:25:31 jprevoe (58552)> slog
+2015/11/12 09:25:31 jprevoe (58552)> slog exited 0 after 0.08 seconds
+2015/11/12 09:25:46 jprevoe (58583)> co 6
+2015/11/12 09:25:46 jprevoe (58583)> co 6 exited 0 after 0.10 seconds
+2015/11/12 09:25:48 jprevoe (58590)> strip 7
+2015/11/12 09:25:48 jprevoe (58590)> strip 7 exited 0 after 0.08 seconds
+2015/11/12 09:25:50 jprevoe (58606)> slog
+2015/11/12 09:25:50 jprevoe (58606)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/11/12 09:25:50 jprevoe (58606)> updated served branch cache in 0.0019 seconds
+2015/11/12 09:25:50 jprevoe (58606)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/12 09:25:50 jprevoe (58606)> slog exited 0 after 0.09 seconds
+2015/11/12 09:26:00 jprevoe (58634)> log
+2015/11/12 09:26:00 jprevoe (58634)> writing .hg/cache/tags2-visible-directaccess-nowarn with 0 tags
+2015/11/12 09:26:00 jprevoe (58634)> log exited 0 after 0.09 seconds
+2015/11/12 09:26:21 jprevoe (58671)> status
+2015/11/12 09:26:21 jprevoe (58671)> status exited 0 after 0.09 seconds
+2015/11/12 09:26:28 jprevoe (58697)> status
+2015/11/12 09:26:28 jprevoe (58697)> status exited 0 after 0.08 seconds
+2015/11/12 09:27:23 jprevoe (59052)> status
+2015/11/12 09:27:23 jprevoe (59052)> status exited 0 after 0.19 seconds
+2015/11/12 09:27:44 jprevoe (59089)> forget .idea
+2015/11/12 09:27:44 jprevoe (59089)> forget .idea exited 0 after 0.07 seconds
+2015/11/12 09:28:02 jprevoe (59124)> forget build
+2015/11/12 09:28:02 jprevoe (59124)> forget build exited 0 after 0.08 seconds
+2015/11/12 09:28:04 jprevoe (59142)> status
+2015/11/12 09:28:04 jprevoe (59142)> status exited 0 after 0.10 seconds
+2015/11/12 09:28:16 jprevoe (59173)> status
+2015/11/12 09:28:16 jprevoe (59173)> status exited 0 after 0.09 seconds
+2015/11/12 09:28:22 jprevoe (59196)> commit -m 'More ignored files'
+2015/11/12 09:28:22 jprevoe (59196)> updated served branch cache in 0.0016 seconds
+2015/11/12 09:28:22 jprevoe (59196)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/12 09:28:22 jprevoe (59196)> commit -m 'More ignored files' exited 0 after 0.11 seconds
+2015/11/12 09:28:24 jprevoe (59214)> status
+2015/11/12 09:28:24 jprevoe (59214)> status exited 0 after 0.08 seconds
+2015/11/12 09:28:25 jprevoe (59231)> sl
+2015/11/12 09:28:25 jprevoe (59231)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/11/12 09:28:25 jprevoe (59231)> sl exited 0 after 0.09 seconds
+2015/11/12 09:28:31 jprevoe (59257)> status
+2015/11/12 09:28:31 jprevoe (59257)> status exited 0 after 0.09 seconds
+2015/11/12 23:38:05 jprevoe (59984)> status
+2015/11/12 23:38:05 jprevoe (59984)> status exited 0 after 0.18 seconds
+2015/11/12 23:38:09 jprevoe (60007)> diff
+2015/11/12 23:38:09 jprevoe (60007)> diff exited 0 after 0.10 seconds
+2015/11/12 23:38:17 jprevoe (60030)> add .
+2015/11/12 23:38:17 jprevoe (60030)> add . exited 0 after 0.08 seconds
+2015/11/12 23:38:24 jprevoe (60054)> commit -m 'Added some TODOs'
+2015/11/12 23:38:24 jprevoe (60054)> updated served branch cache in 0.0014 seconds
+2015/11/12 23:38:24 jprevoe (60054)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/12 23:38:24 jprevoe (60054)> commit -m 'Added some TODOs' exited 0 after 0.11 seconds
+2015/11/14 12:31:21 jprevoe (79387)> status
+2015/11/14 12:31:21 jprevoe (79387)> status exited 0 after 0.17 seconds
+2015/11/14 12:31:26 jprevoe (79410)> slog
+2015/11/14 12:31:26 jprevoe (79410)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/11/14 12:31:26 jprevoe (79410)> slog exited 0 after 0.09 seconds
+2015/11/14 12:31:29 jprevoe (79419)> log
+2015/11/14 12:31:29 jprevoe (79419)> writing .hg/cache/tags2-visible-directaccess-nowarn with 0 tags
+2015/11/14 12:31:29 jprevoe (79419)> log exited 0 after 0.09 seconds
+2015/11/14 12:31:38 jprevoe (79479)> diff -c 9
+2015/11/14 12:31:38 jprevoe (79479)> diff -c 9 exited 0 after 0.10 seconds
+2015/11/14 12:32:04 jprevoe (79597)> sl
+2015/11/14 12:32:04 jprevoe (79597)> sl exited 0 after 0.09 seconds
+2015/11/14 12:32:06 jprevoe (79616)> log
+2015/11/14 12:32:06 jprevoe (79616)> log exited 0 after 0.08 seconds
+2015/11/14 13:15:09 jprevoe (83002)> status
+2015/11/14 13:15:09 jprevoe (83002)> status exited 0 after 0.09 seconds
+2015/11/14 13:15:12 jprevoe (83021)> add .
+2015/11/14 13:15:12 jprevoe (83021)> add . exited 0 after 0.08 seconds
+2015/11/14 13:15:43 jprevoe (83076)> commit -m 'Map scrolls with you and enum for spells'
+2015/11/14 13:15:43 jprevoe (83076)> updated served branch cache in 0.0006 seconds
+2015/11/14 13:15:43 jprevoe (83076)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/14 13:15:43 jprevoe (83076)> commit -m 'Map scrolls with you and enum for spells' exited 0 after 0.11 seconds
+2015/11/14 13:24:45 jprevoe (83877)> add .
+2015/11/14 13:24:45 jprevoe (83877)> add . exited 0 after 0.08 seconds
+2015/11/14 13:25:05 jprevoe (83914)> commit -m 'Fireblast looks a bit more chaotic'
+2015/11/14 13:25:05 jprevoe (83914)> updated served branch cache in 0.0004 seconds
+2015/11/14 13:25:05 jprevoe (83914)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/14 13:25:05 jprevoe (83914)> commit -m 'Fireblast looks a bit more chaotic' exited 0 after 0.10 seconds
+2015/11/14 14:08:51 jprevoe (86738)> status
+2015/11/14 14:08:51 jprevoe (86738)> status exited 0 after 0.18 seconds
+2015/11/14 17:45:03 jprevoe (93178)> status
+2015/11/14 17:45:03 jprevoe (93178)> status exited 0 after 0.19 seconds
+2015/11/14 17:45:04 jprevoe (93195)> add .
+2015/11/14 17:45:04 jprevoe (93195)> add . exited 0 after 0.09 seconds
+2015/11/14 17:45:17 jprevoe (93225)> commit -m 'Updating enemy art, and adding bomber unit'
+2015/11/14 17:45:17 jprevoe (93225)> updated served branch cache in 0.0017 seconds
+2015/11/14 17:45:17 jprevoe (93225)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/14 17:45:17 jprevoe (93225)> commit -m 'Updating enemy art, and adding bomber unit' exited 0 after 0.12 seconds
+2015/11/14 18:41:19 jprevoe (97419)> status
+2015/11/14 18:41:19 jprevoe (97419)> status exited 0 after 0.18 seconds
+2015/11/14 18:41:26 jprevoe (97444)> commit -m 'Bomber unit created'
+2015/11/14 18:41:26 jprevoe (97444)> updated served branch cache in 0.0014 seconds
+2015/11/14 18:41:26 jprevoe (97444)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/14 18:41:26 jprevoe (97444)> commit -m 'Bomber unit created' exited 0 after 0.12 seconds
+2015/11/14 19:07:49 jprevoe (99442)> commit -m 'Bomber movement updated'
+2015/11/14 19:07:50 jprevoe (99442)> updated served branch cache in 0.0015 seconds
+2015/11/14 19:07:50 jprevoe (99442)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/14 19:07:50 jprevoe (99442)> commit -m 'Bomber movement updated' exited 0 after 0.21 seconds
+2015/11/14 19:50:27 jprevoe (2796)> status
+2015/11/14 19:50:27 jprevoe (2796)> status exited 0 after 0.19 seconds
+2015/11/14 19:50:30 jprevoe (2818)> add .
+2015/11/14 19:50:30 jprevoe (2818)> add . exited 0 after 0.09 seconds
+2015/11/14 19:50:35 jprevoe (2840)> commit -m 'Bomber movement updated'
+2015/11/14 19:50:35 jprevoe (2840)> updated served branch cache in 0.0016 seconds
+2015/11/14 19:50:35 jprevoe (2840)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/14 19:50:35 jprevoe (2840)> commit -m 'Bomber movement updated' exited 0 after 0.12 seconds
+2015/11/15 13:36:35 jprevoe (13415)> status
+2015/11/15 13:36:35 jprevoe (13415)> status exited 0 after 0.17 seconds
+2015/11/15 13:36:38 jprevoe (13434)> add .
+2015/11/15 13:36:38 jprevoe (13434)> add . exited 0 after 0.09 seconds
+2015/11/15 13:36:45 jprevoe (13454)> commit -m 'Added two new units'
+2015/11/15 13:36:45 jprevoe (13454)> updated served branch cache in 0.0014 seconds
+2015/11/15 13:36:45 jprevoe (13454)> wrote served branch cache with 1 labels and 1 nodes
+2015/11/15 13:36:45 jprevoe (13454)> commit -m 'Added two new units' exited 0 after 0.12 seconds
+2015/12/13 00:57:17 jprevoe (39671)> status
+2015/12/13 00:57:17 jprevoe (39671)> status exited 0 after 0.25 seconds
+2015/12/13 00:57:42 jprevoe (39729)> diff
+2015/12/13 00:57:42 jprevoe (39729)> diff exited 0 after 0.15 seconds
+2015/12/13 01:27:47 jprevoe (43281)> amend
+2015/12/13 01:27:48 jprevoe (43281)> updated served branch cache in 0.0022 seconds
+2015/12/13 01:27:48 jprevoe (43281)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/13 01:27:48 jprevoe (43281)> updated served branch cache in 0.0001 seconds
+2015/12/13 01:27:48 jprevoe (43281)> wrote served branch cache with 1 labels and 2 nodes
+2015/12/13 01:27:48 jprevoe (43281)> amend exited 0 after 0.20 seconds
+2015/12/13 01:27:50 jprevoe (43299)> status
+2015/12/13 01:27:50 jprevoe (43299)> status exited 0 after 0.10 seconds
+2015/12/13 01:27:53 jprevoe (43318)> add .
+2015/12/13 01:27:53 jprevoe (43318)> add . exited 0 after 0.08 seconds
+2015/12/13 01:27:55 jprevoe (43336)> amend
+2015/12/13 01:27:55 jprevoe (43336)> updated served branch cache in 0.0005 seconds
+2015/12/13 01:27:55 jprevoe (43336)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/13 01:27:55 jprevoe (43336)> updated served branch cache in 0.0001 seconds
+2015/12/13 01:27:55 jprevoe (43336)> wrote served branch cache with 1 labels and 2 nodes
+2015/12/13 01:27:55 jprevoe (43336)> amend exited 0 after 0.13 seconds
+2015/12/13 01:27:56 jprevoe (43354)> status
+2015/12/13 01:27:56 jprevoe (43354)> status exited 0 after 0.09 seconds
+2015/12/13 01:28:13 jprevoe (43395)> status
+2015/12/13 01:28:13 jprevoe (43395)> status exited 0 after 0.08 seconds
+2015/12/13 01:28:23 jprevoe (43423)> status
+2015/12/13 01:28:23 jprevoe (43423)> status exited 0 after 0.09 seconds
+2015/12/13 01:28:25 jprevoe (43447)> sl
+2015/12/13 01:28:25 jprevoe (43447)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/12/13 01:28:25 jprevoe (43447)> updated served branch cache in 0.0011 seconds
+2015/12/13 01:28:25 jprevoe (43447)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/13 01:28:25 jprevoe (43447)> sl exited 0 after 0.09 seconds
+2015/12/13 01:28:29 jprevoe (43467)> amend
+2015/12/13 01:28:29 jprevoe (43467)> updated served branch cache in 0.0002 seconds
+2015/12/13 01:28:29 jprevoe (43467)> wrote served branch cache with 1 labels and 2 nodes
+2015/12/13 01:28:29 jprevoe (43467)> amend exited 0 after 0.11 seconds
+2015/12/13 01:29:28 jprevoe (43570)> sl
+2015/12/13 01:29:28 jprevoe (43570)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/12/13 01:29:28 jprevoe (43570)> updated served branch cache in 0.0014 seconds
+2015/12/13 01:29:28 jprevoe (43570)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/13 01:29:28 jprevoe (43570)> sl exited 0 after 0.09 seconds
+2015/12/13 01:29:30 jprevoe (43589)> status
+2015/12/13 01:29:30 jprevoe (43589)> status exited 0 after 0.09 seconds
+2015/12/13 01:29:38 jprevoe (43629)> amend -A
+2015/12/13 01:29:38 jprevoe (43629)> updated served branch cache in 0.0005 seconds
+2015/12/13 01:29:38 jprevoe (43629)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/13 01:29:38 jprevoe (43629)> updated served branch cache in 0.0001 seconds
+2015/12/13 01:29:38 jprevoe (43629)> wrote served branch cache with 1 labels and 2 nodes
+2015/12/13 01:29:38 jprevoe (43629)> amend -A exited 0 after 0.15 seconds
+2015/12/13 01:29:40 jprevoe (43647)> status
+2015/12/13 01:29:40 jprevoe (43647)> status exited 0 after 0.08 seconds
+2015/12/13 01:29:40 jprevoe (43666)> sl
+2015/12/13 01:29:40 jprevoe (43666)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/12/13 01:29:40 jprevoe (43666)> updated served branch cache in 0.0010 seconds
+2015/12/13 01:29:40 jprevoe (43666)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/13 01:29:41 jprevoe (43666)> sl exited 0 after 0.10 seconds
+2015/12/24 15:24:44 jprevoe (19521)> status
+2015/12/24 15:24:44 jprevoe (19521)> status exited 0 after 0.20 seconds
+2015/12/24 15:24:57 jprevoe (19551)> commit -m 'Starting work on new turn system'
+2015/12/24 15:24:57 jprevoe (19551)> updated served branch cache in 0.0018 seconds
+2015/12/24 15:24:57 jprevoe (19551)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/24 15:24:57 jprevoe (19551)> commit -m 'Starting work on new turn system' exited 0 after 0.14 seconds
+2015/12/24 15:59:54 jprevoe (22048)> status
+2015/12/24 15:59:54 jprevoe (22048)> status exited 0 after 0.19 seconds
+2015/12/24 15:59:55 jprevoe (22064)> sl
+2015/12/24 15:59:55 jprevoe (22064)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/12/24 15:59:55 jprevoe (22064)> sl exited 0 after 0.10 seconds
+2015/12/24 15:59:56 jprevoe (22084)> add .
+2015/12/24 15:59:56 jprevoe (22084)> add . exited 0 after 0.09 seconds
+2015/12/24 16:00:20 jprevoe (22181)> commit -m 'melee units aim with an animation'
+2015/12/24 16:00:20 jprevoe (22181)> updated served branch cache in 0.0012 seconds
+2015/12/24 16:00:20 jprevoe (22181)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/24 16:00:20 jprevoe (22181)> commit -m 'melee units aim with an animation' exited 0 after 0.12 seconds
+2015/12/24 21:43:22 jprevoe (32635)> commit -m 'Attack animation is go'
+2015/12/24 21:43:22 jprevoe (32635)> updated served branch cache in 0.0013 seconds
+2015/12/24 21:43:22 jprevoe (32635)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/24 21:43:22 jprevoe (32635)> commit -m 'Attack animation is go' exited 0 after 0.22 seconds
+2015/12/24 21:43:24 jprevoe (32643)> status
+2015/12/24 21:43:24 jprevoe (32643)> status exited 0 after 0.10 seconds
+2015/12/24 22:14:43 jprevoe (34545)> status
+2015/12/24 22:14:43 jprevoe (34545)> status exited 0 after 0.16 seconds
+2015/12/24 22:20:30 jprevoe (34984)> status
+2015/12/24 22:20:30 jprevoe (34984)> status exited 0 after 0.18 seconds
+2015/12/24 22:20:30 jprevoe (35002)> sl
+2015/12/24 22:20:30 jprevoe (35002)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/12/24 22:20:30 jprevoe (35002)> sl exited 0 after 0.10 seconds
+2015/12/24 22:20:46 jprevoe (35035)> commit -m 'adjusting melee action speed'
+2015/12/24 22:20:46 jprevoe (35035)> updated served branch cache in 0.0011 seconds
+2015/12/24 22:20:46 jprevoe (35035)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/24 22:20:46 jprevoe (35035)> commit -m 'adjusting melee action speed' exited 0 after 0.12 seconds
+2015/12/24 22:33:19 jprevoe (35981)> status
+2015/12/24 22:33:19 jprevoe (35981)> status exited 0 after 0.20 seconds
+2015/12/26 19:53:41 jprevoe (44879)> status
+2015/12/26 19:53:41 jprevoe (44879)> status exited 0 after 0.20 seconds
+2015/12/26 19:53:42 jprevoe (44896)> diff
+2015/12/26 19:53:42 jprevoe (44896)> diff exited 0 after 0.10 seconds
+2015/12/26 19:53:46 jprevoe (44917)> shelve
+2015/12/26 19:53:56 jprevoe (44917)> shelve exited 0 after 9.98 seconds
+2015/12/26 21:03:56 jprevoe (49820)> unshelve
+2015/12/26 21:04:00 jprevoe (49820)> unshelve exited 0 after 4.41 seconds
+2015/12/26 21:42:39 jprevoe (52707)> sl
+2015/12/26 21:42:39 jprevoe (52707)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/12/26 21:42:39 jprevoe (52707)> sl exited 0 after 0.10 seconds
+2015/12/26 21:42:42 jprevoe (52716)> status
+2015/12/26 21:42:42 jprevoe (52716)> status exited 0 after 0.09 seconds
+2015/12/26 21:43:03 jprevoe (52746)> commit -m 'scaling units'
+2015/12/26 21:43:03 jprevoe (52746)> updated served branch cache in 0.0010 seconds
+2015/12/26 21:43:03 jprevoe (52746)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/26 21:43:03 jprevoe (52746)> commit -m 'scaling units' exited 0 after 0.11 seconds
+2015/12/26 22:30:50 jprevoe (56100)> status
+2015/12/26 22:30:50 jprevoe (56100)> status exited 0 after 0.20 seconds
+2015/12/26 22:31:06 jprevoe (56122)> add .
+2015/12/26 22:31:06 jprevoe (56122)> add . exited 0 after 0.09 seconds
+2015/12/26 22:32:23 jprevoe (56228)> commit -m 'added archer walk animations'
+2015/12/26 22:32:23 jprevoe (56228)> updated served branch cache in 0.0019 seconds
+2015/12/26 22:32:23 jprevoe (56228)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/26 22:32:23 jprevoe (56228)> commit -m 'added archer walk animations' exited 0 after 0.15 seconds
+2015/12/29 14:47:35 jprevoe (79253)> status
+2015/12/29 14:47:35 jprevoe (79253)> status exited 0 after 0.17 seconds
+2015/12/29 14:47:39 jprevoe (79275)> add .
+2015/12/29 14:47:39 jprevoe (79275)> add . exited 0 after 0.10 seconds
+2015/12/29 14:47:40 jprevoe (79291)> shelve
+2015/12/29 14:47:51 jprevoe (79291)> shelve exited 0 after 10.30 seconds
+2015/12/31 14:53:47 jprevoe (19956)> status
+2015/12/31 14:53:47 jprevoe (19956)> status exited 0 after 0.25 seconds
+2015/12/31 14:53:52 jprevoe (19977)> sl
+2015/12/31 14:53:52 jprevoe (19977)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2015/12/31 14:53:52 jprevoe (19977)> sl exited 0 after 0.09 seconds
+2015/12/31 14:54:02 jprevoe (20004)> unshelve
+2015/12/31 14:54:07 jprevoe (20004)> unshelve exited 0 after 4.90 seconds
+2015/12/31 14:58:17 jprevoe (20313)> status
+2015/12/31 14:58:17 jprevoe (20313)> status exited 0 after 0.09 seconds
+2015/12/31 14:59:13 jprevoe (20385)> rm app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionRangedAttack.java
+2015/12/31 14:59:13 jprevoe (20385)> rm app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionRangedAttack.java exited 1 after 0.09 seconds
+2015/12/31 14:59:27 jprevoe (20473)> rm app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionRangedAttack.java -f
+2015/12/31 14:59:27 jprevoe (20473)> rm app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionRangedAttack.java -f exited 0 after 0.09 seconds
+2015/12/31 15:00:25 jprevoe (20569)> add app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionRangedAttack.java
+2015/12/31 15:00:25 jprevoe (20569)> add app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionRangedAttack.java exited 1 after 0.08 seconds
+2015/12/31 15:01:24 jprevoe (20669)> status
+2015/12/31 15:01:24 jprevoe (20669)> status exited 0 after 0.09 seconds
+2015/12/31 15:01:48 jprevoe (20711)> revert app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionRangedAttack.java
+2015/12/31 15:01:48 jprevoe (20711)> revert app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Actions/Attacks/UnitActionRangedAttack.java exited 0 after 0.09 seconds
+2015/12/31 15:01:51 jprevoe (20731)> status
+2015/12/31 15:01:51 jprevoe (20731)> status exited 0 after 0.09 seconds
+2015/12/31 15:32:54 jprevoe (23016)> status
+2015/12/31 15:32:54 jprevoe (23016)> status exited 0 after 0.09 seconds
+2015/12/31 15:32:59 jprevoe (23038)> add .
+2015/12/31 15:32:59 jprevoe (23038)> add . exited 0 after 0.09 seconds
+2015/12/31 15:34:22 jprevoe (23135)> commit -m 'adding ranged attack animation'
+2015/12/31 15:34:23 jprevoe (23135)> updated served branch cache in 0.0004 seconds
+2015/12/31 15:34:23 jprevoe (23135)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/31 15:34:23 jprevoe (23135)> commit -m 'adding ranged attack animation' exited 0 after 0.11 seconds
+2015/12/31 15:34:26 jprevoe (23153)> status
+2015/12/31 15:34:26 jprevoe (23153)> status exited 0 after 0.09 seconds
+2015/12/31 15:48:21 jprevoe (24232)> status
+2015/12/31 15:48:21 jprevoe (24232)> status exited 0 after 0.10 seconds
+2015/12/31 15:49:35 jprevoe (24338)> commit -m 'Fixed animation bug with ranged units'
+2015/12/31 15:49:35 jprevoe (24338)> updated served branch cache in 0.0005 seconds
+2015/12/31 15:49:35 jprevoe (24338)> wrote served branch cache with 1 labels and 1 nodes
+2015/12/31 15:49:35 jprevoe (24338)> commit -m 'Fixed animation bug with ranged units' exited 0 after 0.10 seconds
+2016/02/11 10:50:13 jprevoe (7638)> status
+2016/02/11 10:50:13 jprevoe (7638)> status exited 0 after 0.11 seconds
+2016/02/11 10:50:16 jprevoe (7655)> diff
+2016/02/11 10:50:16 jprevoe (7655)> diff exited 0 after 0.10 seconds
+2016/02/11 10:50:33 jprevoe (7688)> commit -m 'Updating TODO list'
+2016/02/11 10:50:33 jprevoe (7688)> updated served branch cache in 0.0016 seconds
+2016/02/11 10:50:33 jprevoe (7688)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/11 10:50:33 jprevoe (7688)> commit -m 'Updating TODO list' exited 0 after 0.10 seconds
+2016/02/12 11:29:39 jprevoe (46990)> status
+2016/02/12 11:29:39 jprevoe (46990)> status exited 0 after 0.16 seconds
+2016/02/12 11:29:41 jprevoe (47007)> sl
+2016/02/12 11:29:41 jprevoe (47007)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2016/02/12 11:29:41 jprevoe (47007)> sl exited 0 after 0.10 seconds
+2016/02/12 11:29:48 jprevoe (47030)> co cf22ca
+2016/02/12 11:29:48 jprevoe (47030)> pythonhook-pre-update: morestatus.saveupdateargs finished in 0.00 seconds
+2016/02/12 11:29:49 jprevoe (47030)> writing .hg/cache/tags2-visible-directaccess-nowarn with 0 tags
+2016/02/12 11:29:49 jprevoe (47030)> pythonhook-post-update: morestatus.cleanupdateargs finished in 0.00 seconds
+2016/02/12 11:29:49 jprevoe (47030)> co cf22ca exited 0 after 0.09 seconds
+2016/02/12 11:30:18 jprevoe (47064)> commit -m 'Decoupling turn animation time and animations'
+2016/02/12 11:30:18 jprevoe (47064)> updated served branch cache in 0.0010 seconds
+2016/02/12 11:30:18 jprevoe (47064)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/12 11:30:18 jprevoe (47064)> commit -m 'Decoupling turn animation time and animations' exited 0 after 0.13 seconds
+2016/02/12 11:30:20 jprevoe (47080)> co cf22ca
+2016/02/12 11:30:20 jprevoe (47080)> pythonhook-pre-update: morestatus.saveupdateargs finished in 0.00 seconds
+2016/02/12 11:30:20 jprevoe (47080)> writing .hg/cache/tags2-visible-directaccess-nowarn with 0 tags
+2016/02/12 11:30:20 jprevoe (47080)> pythonhook-post-update: morestatus.cleanupdateargs finished in 0.00 seconds
+2016/02/12 11:30:20 jprevoe (47080)> co cf22ca exited 0 after 0.11 seconds
+2016/02/12 11:30:22 jprevoe (47087)> sl
+2016/02/12 11:30:22 jprevoe (47087)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2016/02/12 11:30:22 jprevoe (47087)> sl exited 0 after 0.09 seconds
+2016/02/12 11:30:56 jprevoe (47141)> bookmark 'working animations'
+2016/02/12 11:30:56 jprevoe (47141)> bookmark 'working animations' exited 0 after 0.10 seconds
+2016/02/12 11:31:02 jprevoe (47159)> co 6f4d1f
+2016/02/12 11:31:02 jprevoe (47159)> pythonhook-pre-update: morestatus.saveupdateargs finished in 0.00 seconds
+2016/02/12 11:31:02 jprevoe (47159)> pythonhook-post-update: morestatus.cleanupdateargs finished in 0.00 seconds
+2016/02/12 11:31:02 jprevoe (47159)> co 6f4d1f exited 0 after 0.11 seconds
+2016/02/12 11:31:04 jprevoe (47166)> sl
+2016/02/12 11:31:04 jprevoe (47166)> sl exited 0 after 0.10 seconds
+2016/02/12 11:31:14 jprevoe (47191)> bookmark 'readjusted animations'
+2016/02/12 11:31:14 jprevoe (47191)> bookmark 'readjusted animations' exited 0 after 0.09 seconds
+2016/02/13 11:36:42 jprevoe (83090)> sl
+2016/02/13 11:36:42 jprevoe (83090)> sl exited 0 after 0.21 seconds
+2016/02/13 11:36:46 jprevoe (83109)> amend
+2016/02/13 11:36:46 jprevoe (83109)> updated served branch cache in 0.0013 seconds
+2016/02/13 11:36:46 jprevoe (83109)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/13 11:36:46 jprevoe (83109)> updated served branch cache in 0.0001 seconds
+2016/02/13 11:36:46 jprevoe (83109)> wrote served branch cache with 1 labels and 2 nodes
+2016/02/13 11:36:46 jprevoe (83109)> amend exited 0 after 0.16 seconds
+2016/02/13 11:37:09 jprevoe (83146)> amend
+2016/02/13 11:37:09 jprevoe (83146)> updated served branch cache in 0.0017 seconds
+2016/02/13 11:37:09 jprevoe (83146)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/13 11:37:09 jprevoe (83146)> updated served branch cache in 0.0001 seconds
+2016/02/13 11:37:09 jprevoe (83146)> wrote served branch cache with 1 labels and 2 nodes
+2016/02/13 11:37:09 jprevoe (83146)> amend exited 0 after 0.24 seconds
+2016/02/13 16:01:37 jprevoe (92476)> status
+2016/02/13 16:01:37 jprevoe (92476)> status exited 0 after 0.20 seconds
+2016/02/13 16:01:39 jprevoe (92493)> add .
+2016/02/13 16:01:39 jprevoe (92493)> add . exited 0 after 0.08 seconds
+2016/02/13 16:01:45 jprevoe (92513)> commit -m 'Adding death animation'
+2016/02/13 16:01:45 jprevoe (92513)> updated served branch cache in 0.0025 seconds
+2016/02/13 16:01:45 jprevoe (92513)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/13 16:01:45 jprevoe (92513)> updated served branch cache in 0.0001 seconds
+2016/02/13 16:01:45 jprevoe (92513)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/13 16:01:45 jprevoe (92513)> commit -m 'Adding death animation' exited 0 after 0.13 seconds
+2016/02/13 17:47:06 jprevoe (518)> status
+2016/02/13 17:47:06 jprevoe (518)> status exited 0 after 0.18 seconds
+2016/02/13 17:47:10 jprevoe (537)> sl
+2016/02/13 17:47:10 jprevoe (537)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2016/02/13 17:47:10 jprevoe (537)> sl exited 0 after 0.11 seconds
+2016/02/13 17:47:14 jprevoe (556)> amend
+2016/02/13 17:47:14 jprevoe (556)> updated served branch cache in 0.0010 seconds
+2016/02/13 17:47:14 jprevoe (556)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/13 17:47:14 jprevoe (556)> updated served branch cache in 0.0001 seconds
+2016/02/13 17:47:14 jprevoe (556)> wrote served branch cache with 1 labels and 2 nodes
+2016/02/13 17:47:14 jprevoe (556)> amend exited 0 after 0.16 seconds
+2016/02/13 17:47:15 jprevoe (572)> status
+2016/02/13 17:47:15 jprevoe (572)> status exited 0 after 0.09 seconds
+2016/02/13 17:47:16 jprevoe (587)> add .
+2016/02/13 17:47:16 jprevoe (587)> add . exited 0 after 0.08 seconds
+2016/02/13 17:47:19 jprevoe (605)> amend
+2016/02/13 17:47:19 jprevoe (605)> updated served branch cache in 0.0006 seconds
+2016/02/13 17:47:19 jprevoe (605)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/13 17:47:19 jprevoe (605)> updated served branch cache in 0.0001 seconds
+2016/02/13 17:47:19 jprevoe (605)> wrote served branch cache with 1 labels and 2 nodes
+2016/02/13 17:47:19 jprevoe (605)> amend exited 0 after 0.14 seconds
+2016/02/13 17:47:20 jprevoe (619)> status
+2016/02/13 17:47:20 jprevoe (619)> status exited 0 after 0.09 seconds
+2016/02/13 17:47:53 jprevoe (733)> status
+2016/02/13 17:47:53 jprevoe (733)> status exited 0 after 0.14 seconds
+2016/02/13 17:48:00 jprevoe (764)> status
+2016/02/13 17:48:00 jprevoe (764)> status exited 0 after 0.08 seconds
+2016/02/13 17:48:03 jprevoe (787)> status
+2016/02/13 17:48:03 jprevoe (787)> status exited 0 after 0.09 seconds
+2016/02/13 17:48:06 jprevoe (805)> status
+2016/02/13 17:48:06 jprevoe (805)> status exited 0 after 0.09 seconds
+2016/02/13 17:48:09 jprevoe (822)> status
+2016/02/13 17:48:09 jprevoe (822)> status exited 0 after 0.09 seconds
+2016/02/13 17:48:17 jprevoe (871)> status
+2016/02/13 17:48:17 jprevoe (871)> status exited 0 after 0.09 seconds
+2016/02/13 17:48:20 jprevoe (893)> add .
+2016/02/13 17:48:20 jprevoe (893)> add . exited 0 after 0.09 seconds
+2016/02/13 17:48:21 jprevoe (919)> amend
+2016/02/13 17:48:21 jprevoe (919)> updated served branch cache in 0.0026 seconds
+2016/02/13 17:48:21 jprevoe (919)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/13 17:48:21 jprevoe (919)> updated served branch cache in 0.0001 seconds
+2016/02/13 17:48:21 jprevoe (919)> wrote served branch cache with 1 labels and 2 nodes
+2016/02/13 17:48:21 jprevoe (919)> amend exited 0 after 0.14 seconds
+2016/02/13 17:48:23 jprevoe (937)> sl
+2016/02/13 17:48:23 jprevoe (937)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2016/02/13 17:48:23 jprevoe (937)> updated served branch cache in 0.0012 seconds
+2016/02/13 17:48:23 jprevoe (937)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/13 17:48:23 jprevoe (937)> sl exited 0 after 0.10 seconds
+2016/02/13 17:48:24 jprevoe (954)> status
+2016/02/13 17:48:24 jprevoe (954)> status exited 0 after 0.09 seconds
+2016/02/13 23:31:14 jprevoe (16084)> status
+2016/02/13 23:31:14 jprevoe (16084)> status exited 0 after 0.19 seconds
+2016/02/13 23:31:16 jprevoe (16101)> sl
+2016/02/13 23:31:16 jprevoe (16101)> sl exited 0 after 0.09 seconds
+2016/02/13 23:31:21 jprevoe (16120)> add .
+2016/02/13 23:31:21 jprevoe (16120)> add . exited 0 after 0.10 seconds
+2016/02/13 23:31:43 jprevoe (16179)> commit -m 'Added death animation to ranger, and tightened up some graphics'
+2016/02/13 23:31:43 jprevoe (16179)> updated served branch cache in 0.0016 seconds
+2016/02/13 23:31:43 jprevoe (16179)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/13 23:31:43 jprevoe (16179)> commit -m 'Added death animation to ranger, and tightened up some graphics' exited 0 after 0.13 seconds
+2016/02/13 23:31:45 jprevoe (16195)> status
+2016/02/13 23:31:45 jprevoe (16195)> status exited 0 after 0.09 seconds
+2016/02/13 23:32:05 jprevoe (16228)> rm app/src/main/res/drawable/character_melee_11.png
+2016/02/13 23:32:06 jprevoe (16228)> rm app/src/main/res/drawable/character_melee_11.png exited 0 after 0.17 seconds
+2016/02/13 23:32:07 jprevoe (16244)> status
+2016/02/13 23:32:07 jprevoe (16244)> status exited 0 after 0.09 seconds
+2016/02/13 23:32:07 jprevoe (16259)> sl
+2016/02/13 23:32:08 jprevoe (16259)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2016/02/13 23:32:08 jprevoe (16259)> sl exited 0 after 0.10 seconds
+2016/02/13 23:32:09 jprevoe (16276)> amend
+2016/02/13 23:32:09 jprevoe (16276)> updated served branch cache in 0.0010 seconds
+2016/02/13 23:32:09 jprevoe (16276)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/13 23:32:09 jprevoe (16276)> updated served branch cache in 0.0001 seconds
+2016/02/13 23:32:09 jprevoe (16276)> wrote served branch cache with 1 labels and 2 nodes
+2016/02/13 23:32:09 jprevoe (16276)> amend exited 0 after 0.13 seconds
+2016/02/15 00:45:22 jprevoe (56653)> status
+2016/02/15 00:45:22 jprevoe (56653)> status exited 0 after 0.24 seconds
+2016/02/15 00:45:25 jprevoe (56670)> add .
+2016/02/15 00:45:25 jprevoe (56670)> add . exited 0 after 0.09 seconds
+2016/02/15 00:45:30 jprevoe (56690)> commit -m 'Added knight unit'
+2016/02/15 00:45:30 jprevoe (56690)> updated served branch cache in 0.0032 seconds
+2016/02/15 00:45:30 jprevoe (56690)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/15 00:45:30 jprevoe (56690)> updated served branch cache in 0.0001 seconds
+2016/02/15 00:45:30 jprevoe (56690)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/15 00:45:30 jprevoe (56690)> commit -m 'Added knight unit' exited 0 after 0.16 seconds
+2016/02/15 00:45:31 jprevoe (56704)> sl
+2016/02/15 00:45:31 jprevoe (56704)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2016/02/15 00:45:31 jprevoe (56704)> sl exited 0 after 0.10 seconds
+2016/02/15 00:45:32 jprevoe (56721)> status
+2016/02/15 00:45:32 jprevoe (56721)> status exited 0 after 0.09 seconds
+2016/02/15 01:00:13 jprevoe (57829)> status
+2016/02/15 01:00:13 jprevoe (57829)> status exited 0 after 0.20 seconds
+2016/02/15 01:00:17 jprevoe (57850)> revert --all
+2016/02/15 01:00:17 jprevoe (57850)> revert --all exited 0 after 0.11 seconds
+2016/02/15 11:54:14 jprevoe (70179)> status
+2016/02/15 11:54:14 jprevoe (70179)> status exited 0 after 0.24 seconds
+2016/02/15 12:37:49 jprevoe (73509)> status
+2016/02/15 12:37:49 jprevoe (73509)> status exited 0 after 0.25 seconds
+2016/02/15 12:37:50 jprevoe (73527)> add .
+2016/02/15 12:37:51 jprevoe (73527)> add . exited 0 after 0.09 seconds
+2016/02/15 12:37:56 jprevoe (73547)> commit -m 'Added Double Strike skill'
+2016/02/15 12:37:56 jprevoe (73547)> updated served branch cache in 0.0017 seconds
+2016/02/15 12:37:56 jprevoe (73547)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/15 12:37:56 jprevoe (73547)> commit -m 'Added Double Strike skill' exited 0 after 0.14 seconds
+2016/02/15 13:18:54 jprevoe (77349)> status
+2016/02/15 13:18:54 jprevoe (77349)> status exited 0 after 0.22 seconds
+2016/02/15 13:19:04 jprevoe (77374)> commit -m 'Knight armour flies off when he dies'
+2016/02/15 13:19:04 jprevoe (77374)> updated served branch cache in 0.0018 seconds
+2016/02/15 13:19:04 jprevoe (77374)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/15 13:19:04 jprevoe (77374)> commit -m 'Knight armour flies off when he dies' exited 0 after 0.15 seconds
+2016/02/15 14:01:33 jprevoe (80381)> status
+2016/02/15 14:01:33 jprevoe (80381)> status exited 0 after 0.22 seconds
+2016/02/15 16:31:00 jprevoe (86298)> status
+2016/02/15 16:31:00 jprevoe (86298)> status exited 0 after 0.26 seconds
+2016/02/15 16:31:01 jprevoe (86315)> sl
+2016/02/15 16:31:01 jprevoe (86315)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2016/02/15 16:31:02 jprevoe (86315)> sl exited 0 after 0.10 seconds
+2016/02/15 16:31:13 jprevoe (86341)> commit -m 'Fixing timings on slashes and explosions'
+2016/02/15 16:31:13 jprevoe (86341)> updated served branch cache in 0.0013 seconds
+2016/02/15 16:31:13 jprevoe (86341)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/15 16:31:13 jprevoe (86341)> commit -m 'Fixing timings on slashes and explosions' exited 0 after 0.12 seconds
+2016/02/15 16:44:59 jprevoe (87403)> status
+2016/02/15 16:44:59 jprevoe (87403)> status exited 0 after 0.22 seconds
+2016/02/15 16:45:09 jprevoe (87433)> commit -m 'Refactoring Animation Flipping'
+2016/02/15 16:45:09 jprevoe (87433)> updated served branch cache in 0.0015 seconds
+2016/02/15 16:45:09 jprevoe (87433)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/15 16:45:09 jprevoe (87433)> commit -m 'Refactoring Animation Flipping' exited 0 after 0.13 seconds
+2016/02/15 16:48:23 jprevoe (87689)> status
+2016/02/15 16:48:23 jprevoe (87689)> status exited 0 after 0.21 seconds
+2016/02/15 16:48:25 jprevoe (87706)> amend
+2016/02/15 16:48:25 jprevoe (87706)> updated served branch cache in 0.0021 seconds
+2016/02/15 16:48:25 jprevoe (87706)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/15 16:48:25 jprevoe (87706)> updated served branch cache in 0.0001 seconds
+2016/02/15 16:48:25 jprevoe (87706)> wrote served branch cache with 1 labels and 2 nodes
+2016/02/15 16:48:25 jprevoe (87706)> amend exited 0 after 0.14 seconds
+2016/02/15 17:00:15 jprevoe (88669)> status
+2016/02/15 17:00:15 jprevoe (88669)> status exited 0 after 0.19 seconds
+2016/02/15 17:00:21 jprevoe (88688)> diff
+2016/02/15 17:00:21 jprevoe (88688)> diff exited 0 after 0.12 seconds
+2016/02/15 17:00:28 jprevoe (88711)> status
+2016/02/15 17:00:28 jprevoe (88711)> status exited 0 after 0.09 seconds
+2016/02/15 17:00:30 jprevoe (88728)> amend
+2016/02/15 17:00:30 jprevoe (88728)> updated served branch cache in 0.0019 seconds
+2016/02/15 17:00:30 jprevoe (88728)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/15 17:00:30 jprevoe (88728)> updated served branch cache in 0.0001 seconds
+2016/02/15 17:00:30 jprevoe (88728)> wrote served branch cache with 1 labels and 2 nodes
+2016/02/15 17:00:30 jprevoe (88728)> amend exited 0 after 0.13 seconds
+2016/02/15 17:00:31 jprevoe (88744)> status
+2016/02/15 17:00:31 jprevoe (88744)> status exited 0 after 0.09 seconds
+2016/02/15 17:00:47 jprevoe (88774)> rm app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Player/PlayerSpells.java
+2016/02/15 17:00:47 jprevoe (88774)> rm app/src/main/java/com/android/jprevoe/wizarddefense/Actor/Player/PlayerSpells.java exited 1 after 0.10 seconds
+2016/02/15 17:49:41 jprevoe (92534)> status
+2016/02/15 17:49:41 jprevoe (92534)> status exited 0 after 0.23 seconds
+2016/02/15 17:49:44 jprevoe (92553)> add .
+2016/02/15 17:49:44 jprevoe (92553)> add . exited 0 after 0.09 seconds
+2016/02/15 17:49:57 jprevoe (92579)> commit -m 'Changed how the alert indicator looks'
+2016/02/15 17:49:57 jprevoe (92579)> updated served branch cache in 0.0030 seconds
+2016/02/15 17:49:57 jprevoe (92579)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/15 17:49:58 jprevoe (92579)> updated served branch cache in 0.0001 seconds
+2016/02/15 17:49:58 jprevoe (92579)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/15 17:49:58 jprevoe (92579)> commit -m 'Changed how the alert indicator looks' exited 0 after 0.14 seconds
+2016/02/15 18:00:38 jprevoe (93484)> amend
+2016/02/15 18:00:38 jprevoe (93484)> updated served branch cache in 0.0022 seconds
+2016/02/15 18:00:38 jprevoe (93484)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/15 18:00:38 jprevoe (93484)> updated served branch cache in 0.0001 seconds
+2016/02/15 18:00:38 jprevoe (93484)> wrote served branch cache with 1 labels and 2 nodes
+2016/02/15 18:00:38 jprevoe (93484)> amend exited 0 after 0.22 seconds
+2016/02/16 00:45:41 jprevoe (22430)> status
+2016/02/16 00:45:41 jprevoe (22430)> status exited 0 after 0.25 seconds
+2016/02/16 01:32:15 jprevoe (26117)> status
+2016/02/16 01:32:15 jprevoe (26117)> status exited 0 after 0.24 seconds
+2016/02/16 01:32:17 jprevoe (26134)> add .
+2016/02/16 01:32:17 jprevoe (26134)> add . exited 0 after 0.09 seconds
+2016/02/16 01:32:20 jprevoe (26152)> commit -m 'Adding terrain'
+2016/02/16 01:32:20 jprevoe (26152)> updated served branch cache in 0.0038 seconds
+2016/02/16 01:32:20 jprevoe (26152)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/16 01:32:21 jprevoe (26152)> updated served branch cache in 0.0001 seconds
+2016/02/16 01:32:21 jprevoe (26152)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/16 01:32:21 jprevoe (26152)> commit -m 'Adding terrain' exited 0 after 0.14 seconds
+2016/02/16 12:18:00 jprevoe (33110)> status
+2016/02/16 12:18:00 jprevoe (33110)> status exited 0 after 0.23 seconds
+2016/02/16 12:23:54 jprevoe (33589)> add .
+2016/02/16 12:23:55 jprevoe (33589)> add . exited 0 after 0.19 seconds
+2016/02/16 12:23:55 jprevoe (33603)> amend
+2016/02/16 12:23:55 jprevoe (33603)> updated served branch cache in 0.0022 seconds
+2016/02/16 12:23:55 jprevoe (33603)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/16 12:23:55 jprevoe (33603)> updated served branch cache in 0.0001 seconds
+2016/02/16 12:23:55 jprevoe (33603)> wrote served branch cache with 1 labels and 2 nodes
+2016/02/16 12:23:55 jprevoe (33603)> amend exited 0 after 0.17 seconds
+2016/02/17 20:30:42 jprevoe (5612)> status
+2016/02/17 20:30:42 jprevoe (5612)> status exited 0 after 0.19 seconds
+2016/02/17 20:30:44 jprevoe (5629)> sl
+2016/02/17 20:30:45 jprevoe (5629)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2016/02/17 20:30:45 jprevoe (5629)> updated served branch cache in 0.0032 seconds
+2016/02/17 20:30:45 jprevoe (5629)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/17 20:30:45 jprevoe (5629)> sl exited 0 after 0.10 seconds
+2016/02/17 20:30:47 jprevoe (5646)> add .
+2016/02/17 20:30:47 jprevoe (5646)> add . exited 0 after 0.09 seconds
+2016/02/17 20:32:21 jprevoe (5768)> commit -m 'Added a main menu'
+2016/02/17 20:32:21 jprevoe (5768)> updated served branch cache in 0.0004 seconds
+2016/02/17 20:32:21 jprevoe (5768)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/17 20:32:21 jprevoe (5768)> commit -m 'Added a main menu' exited 0 after 0.12 seconds
+2016/02/17 21:01:51 jprevoe (7988)> sl
+2016/02/17 21:01:51 jprevoe (7988)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2016/02/17 21:01:51 jprevoe (7988)> sl exited 0 after 0.09 seconds
+2016/02/17 21:01:53 jprevoe (8004)> status
+2016/02/17 21:01:53 jprevoe (8004)> status exited 0 after 0.09 seconds
+2016/02/17 21:02:20 jprevoe (8056)> sl
+2016/02/17 21:02:20 jprevoe (8056)> sl exited 0 after 0.08 seconds
+2016/02/17 21:02:22 jprevoe (8072)> amend
+2016/02/17 21:02:22 jprevoe (8072)> updated served branch cache in 0.0005 seconds
+2016/02/17 21:02:22 jprevoe (8072)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/17 21:02:22 jprevoe (8072)> updated served branch cache in 0.0001 seconds
+2016/02/17 21:02:22 jprevoe (8072)> wrote served branch cache with 1 labels and 2 nodes
+2016/02/17 21:02:22 jprevoe (8072)> amend exited 0 after 0.13 seconds
+2016/02/17 21:02:23 jprevoe (8084)> sl
+2016/02/17 21:02:23 jprevoe (8084)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2016/02/17 21:02:23 jprevoe (8084)> updated served branch cache in 0.0013 seconds
+2016/02/17 21:02:23 jprevoe (8084)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/17 21:02:23 jprevoe (8084)> sl exited 0 after 0.09 seconds
+2016/02/17 23:25:20 jprevoe (17669)> status
+2016/02/17 23:25:20 jprevoe (17669)> status exited 0 after 0.15 seconds
+2016/02/17 23:25:21 jprevoe (17698)> add .
+2016/02/17 23:25:21 jprevoe (17698)> add . exited 0 after 0.09 seconds
+2016/02/17 23:25:33 jprevoe (17749)> commit -m 'Added hearts and adjusted AI movement'
+2016/02/17 23:25:33 jprevoe (17749)> updated served branch cache in 0.0016 seconds
+2016/02/17 23:25:33 jprevoe (17749)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/17 23:25:33 jprevoe (17749)> commit -m 'Added hearts and adjusted AI movement' exited 0 after 0.13 seconds
+2016/02/17 23:31:17 jprevoe (18565)> amend
+2016/02/17 23:31:17 jprevoe (18565)> updated served branch cache in 0.0019 seconds
+2016/02/17 23:31:17 jprevoe (18565)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/17 23:31:17 jprevoe (18565)> updated served branch cache in 0.0001 seconds
+2016/02/17 23:31:17 jprevoe (18565)> wrote served branch cache with 1 labels and 2 nodes
+2016/02/17 23:31:17 jprevoe (18565)> amend exited 0 after 0.15 seconds
+2016/02/19 17:05:00 jprevoe (4888)> status
+2016/02/19 17:05:01 jprevoe (4888)> status exited 0 after 0.24 seconds
+2016/02/19 17:05:03 jprevoe (4905)> sl
+2016/02/19 17:05:03 jprevoe (4905)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2016/02/19 17:05:03 jprevoe (4905)> updated served branch cache in 0.0042 seconds
+2016/02/19 17:05:03 jprevoe (4905)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/19 17:05:03 jprevoe (4905)> sl exited 0 after 0.11 seconds
+2016/02/19 17:05:20 jprevoe (4934)> commit -m 'Changed the look of the targetter'
+2016/02/19 17:05:20 jprevoe (4934)> updated served branch cache in 0.0006 seconds
+2016/02/19 17:05:20 jprevoe (4934)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/19 17:05:20 jprevoe (4934)> commit -m 'Changed the look of the targetter' exited 0 after 0.13 seconds
+2016/02/19 17:05:50 jprevoe (4984)> sl
+2016/02/19 17:05:50 jprevoe (4984)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2016/02/19 17:05:50 jprevoe (4984)> sl exited 0 after 0.37 seconds
+2016/02/19 17:05:51 jprevoe (4999)> amend
+2016/02/19 17:05:51 jprevoe (4999)> updated served branch cache in 0.0013 seconds
+2016/02/19 17:05:51 jprevoe (4999)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/19 17:05:51 jprevoe (4999)> updated served branch cache in 0.0001 seconds
+2016/02/19 17:05:51 jprevoe (4999)> wrote served branch cache with 1 labels and 2 nodes
+2016/02/19 17:05:51 jprevoe (4999)> amend exited 0 after 0.18 seconds
+2016/02/19 17:26:22 jprevoe (6551)> status
+2016/02/19 17:26:22 jprevoe (6551)> status exited 0 after 0.23 seconds
+2016/02/19 17:30:52 jprevoe (6917)> add .
+2016/02/19 17:30:52 jprevoe (6917)> add . exited 0 after 0.18 seconds
+2016/02/19 17:31:01 jprevoe (6937)> commit -m 'Making enemies able to attack in any cardinal direction'
+2016/02/19 17:31:01 jprevoe (6937)> updated served branch cache in 0.0043 seconds
+2016/02/19 17:31:01 jprevoe (6937)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/19 17:31:01 jprevoe (6937)> updated served branch cache in 0.0001 seconds
+2016/02/19 17:31:01 jprevoe (6937)> wrote served branch cache with 1 labels and 1 nodes
+2016/02/19 17:31:01 jprevoe (6937)> commit -m 'Making enemies able to attack in any cardinal direction' exited 0 after 0.16 seconds
+2016/03/13 11:25:08 jprevoe (19774)> status
+2016/03/13 11:25:08 jprevoe (19774)> status exited 0 after 0.11 seconds
+2016/03/13 11:25:17 jprevoe (19799)> add .
+2016/03/13 11:25:17 jprevoe (19799)> add . exited 0 after 0.09 seconds
+2016/03/13 11:25:34 jprevoe (19829)> commit -m "Dagger attacks in all directions, access to more cards and more clear which ones you don't have access to"
+2016/03/13 11:25:34 jprevoe (19829)> updated served branch cache in 0.0015 seconds
+2016/03/13 11:25:34 jprevoe (19829)> wrote served branch cache with 1 labels and 1 nodes
+2016/03/13 11:25:34 jprevoe (19829)> commit -m "Dagger attacks in all directions, access to more cards and more clear which ones you don't have access to" exited 0 after 0.12 seconds
+2016/03/22 18:16:00 jprevoe @3243a5762898386ae9e634b73a98434df8d3e0c5 (13286)> status
+2016/03/22 18:16:00 jprevoe @3243a5762898386ae9e634b73a98434df8d3e0c5 (13286)> status exited 0 after 0.20 seconds
+2016/03/22 18:16:14 jprevoe @3243a5762898386ae9e634b73a98434df8d3e0c5 (13346)> commit -m 'Multi Turn Spells'
+2016/03/22 18:16:14 jprevoe @3243a5762898386ae9e634b73a98434df8d3e0c5 (13346)> updated served branch cache in 0.0014 seconds
+2016/03/22 18:16:14 jprevoe @3243a5762898386ae9e634b73a98434df8d3e0c5 (13346)> wrote served branch cache with 1 labels and 1 nodes
+2016/03/22 18:16:14 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13346)> commit -m 'Multi Turn Spells' exited 0 after 0.16 seconds
+2016/03/22 18:17:05 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13437)> push https://TheOneTrueGod@bitbucket.org/TheOneTrueGod/wizarddefense
+2016/03/22 18:17:12 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13437)> push https://TheOneTrueGod@bitbucket.org/TheOneTrueGod/wizarddefense exited -1 after 7.04 seconds
+2016/03/22 18:17:17 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13470)> push https://TheOneTrueGod@bitbucket.org/TheOneTrueGod/wizarddefense
+2016/03/22 18:17:23 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13470)> push https://TheOneTrueGod@bitbucket.org/TheOneTrueGod/wizarddefense exited -1 after 5.48 seconds
+2016/03/22 18:17:51 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13534)> push https://TheOneTrueGod@bitbucket.org/TheOneTrueGod/wizarddefense
+2016/03/22 18:17:58 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13534)> writing .hg/cache/tags2-visible with 0 tags
+2016/03/22 18:17:59 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13534)> push https://TheOneTrueGod@bitbucket.org/TheOneTrueGod/wizarddefense exited -1 after 7.74 seconds
+2016/03/22 18:18:30 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13610)> sl
+2016/03/22 18:18:30 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13610)> writing .hg/cache/tags2-visible-directaccess-warn with 0 tags
+2016/03/22 18:18:30 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13610)> sl exited 0 after 0.11 seconds
+2016/03/22 18:18:48 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13652)> sl
+2016/03/22 18:18:48 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13652)> sl exited 0 after 0.10 seconds
+2016/03/22 18:18:55 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13676)> co 0
+2016/03/22 18:18:55 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13676)> pythonhook-pre-update: morestatus.saveupdateargs finished in 0.00 seconds
+2016/03/22 18:18:56 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13676)> co 0 exited -1 after 1.27 seconds
+2016/03/22 18:19:00 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13687)> status
+2016/03/22 18:19:00 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13687)> status exited 0 after 0.09 seconds
+2016/03/22 18:19:01 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13705)> sl
+2016/03/22 18:19:01 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13705)> sl exited 0 after 0.09 seconds
+2016/03/22 18:19:08 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13730)> add .
+2016/03/22 18:19:08 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13730)> add . exited 0 after 0.10 seconds
+2016/03/22 18:19:10 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13747)> amend
+2016/03/22 18:19:10 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13747)> updated served branch cache in 0.0006 seconds
+2016/03/22 18:19:10 jprevoe @ccd07dac0e7b63bfc347be669d0df25b5524fa81 (13747)> wrote served branch cache with 1 labels and 1 nodes
+2016/03/22 18:19:10 jprevoe @fa09d65094b8e212bf7e447e17911cd309346f69 (13747)> updated served branch cache in 0.0001 seconds
+2016/03/22 18:19:10 jprevoe @fa09d65094b8e212bf7e447e17911cd309346f69 (13747)> wrote served branch cache with 1 labels and 2 nodes
+2016/03/22 18:19:10 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (13747)> amend exited 0 after 0.13 seconds
+2016/03/22 18:19:15 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (13767)> push https://TheOneTrueGod@bitbucket.org/TheOneTrueGod/wizarddefense
+2016/03/22 18:19:18 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (13767)> writing .hg/cache/tags2-visible with 0 tags
+2016/03/22 18:19:18 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (13767)> updated served branch cache in 0.0012 seconds
+2016/03/22 18:19:18 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (13767)> wrote served branch cache with 1 labels and 1 nodes
+2016/03/22 18:19:19 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (13767)> push https://TheOneTrueGod@bitbucket.org/TheOneTrueGod/wizarddefense exited -1 after 4.79 seconds
+2016/03/22 18:19:30 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (13803)> push https://TheOneTrueGod@bitbucket.org/TheOneTrueGod/wizarddefense --allow-anon
+2016/03/22 18:19:52 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (13803)> push https://TheOneTrueGod@bitbucket.org/TheOneTrueGod/wizarddefense --allow-anon exited 0 after 22.90 seconds
+2016/06/12 22:53:46 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (33029)> status
+2016/06/12 22:53:46 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (33029)> status exited 0 after 0.29 seconds
+2016/06/12 22:53:50 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (33049)> add .
+2016/06/12 22:53:50 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (33049)> add . exited 0 after 0.12 seconds
+2016/06/12 22:54:02 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (33078)> commit -m 'Adding Cast Time to Spells, then removing it'
+2016/06/12 22:54:02 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (33078)> updated served branch cache in 0.0025 seconds
+2016/06/12 22:54:02 jprevoe @2b2a5429d155f4f3cf7be338f1ff8a04f58eac36 (33078)> wrote served branch cache with 1 labels and 1 nodes
+2016/06/12 22:54:02 jprevoe @863b075e4b87f4f075306d5bbe07a2d699a3c4fd (33078)> commit -m 'Adding Cast Time to Spells, then removing it' exited 0 after 0.22 seconds
+2016/06/12 23:34:10 jprevoe @863b075e4b87f4f075306d5bbe07a2d699a3c4fd (38158)> status
+2016/06/12 23:34:10 jprevoe @863b075e4b87f4f075306d5bbe07a2d699a3c4fd (38158)> status exited 0 after 0.27 seconds
+2016/06/12 23:34:48 jprevoe @863b075e4b87f4f075306d5bbe07a2d699a3c4fd (38226)> revert --all
+2016/06/12 23:34:48 jprevoe @863b075e4b87f4f075306d5bbe07a2d699a3c4fd (38226)> revert --all exited 0 after 0.26 seconds
+2016/06/12 23:53:24 jprevoe @863b075e4b87f4f075306d5bbe07a2d699a3c4fd (40597)> revert --all
+2016/06/12 23:53:24 jprevoe @863b075e4b87f4f075306d5bbe07a2d699a3c4fd (40597)> revert --all exited 0 after 0.26 seconds

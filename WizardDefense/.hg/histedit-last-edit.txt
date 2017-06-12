@@ -1,0 +1,23 @@
+pick 19d2e6c2bc18 0 Init
+pick 6cb90fffaaed 1 Centering battle display
+pick 1c01c6ad7855 2 Centering battle display view
+pick a252c14a18ee 3 updated hgignore
+pick dbd84d4b33f9 5 Updating .hgignore
+f 7a2adf010c54 6 Updating .hgignore
+
+# Edit history between 19d2e6c2bc18 and 7a2adf010c54
+#
+# Commits are listed from least to most recent
+#
+# Commands:
+#  p, pick = use commit
+#  e, edit = use commit, but stop for amending
+#  s, stop = use commit, and stop after committing changes
+#  f, fold = use commit, but combine it with the one above
+#  r, roll = like fold, but discard this commit's description
+#  d, drop = remove commit from history
+#  m, mess = edit message without changing commit content
+#  x, exec = execute given command
+#  xr, execr = execute given command relative to current directory
+#
+    

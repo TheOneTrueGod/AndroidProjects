@@ -1,0 +1,54 @@
+# HG changeset patch
+# User shelve@localhost
+# Date 1451177626 18000
+#      Sat Dec 26 19:53:46 2015 -0500
+# Node ID 93003ffb757741c0552dc9e77d911a4aa646e6ea
+# Parent  7d4e083181331d4df655a6a21fbb640f26afd0ac
+changes to: adjusting melee action speed
+
+diff --git a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/UnitStats/UnitSpriteCreator.java b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/UnitStats/UnitSpriteCreator.java
+--- a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/UnitStats/UnitSpriteCreator.java
++++ b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/UnitStats/UnitSpriteCreator.java
+@@ -68,10 +68,13 @@
+     }
+ 
+     public Bitmap createFromFullImage(String imageName) {
+-        //int key = feet * 10000 + body * 1000 + hands * 100 + eyes * 10 + accessory;
++        return createFromFullImage(imageName, 1);
++    }
++
++    public Bitmap createFromFullImage(String imageName, float scale) {
+         if (!mBitmaps.containsKey(imageName)) {
+             Bitmap bitmap = Bitmap.createBitmap(
+-                    (int)BattleGrid.SQUARESIZE_X, (int)BattleGrid.SQUARESIZE_Y,
++                    (int)(BattleGrid.SQUARESIZE_X * scale), (int)(BattleGrid.SQUARESIZE_Y * scale),
+                     Bitmap.Config.ARGB_8888);
+             Canvas drawingCanvas = new Canvas(bitmap);
+             drawResourceOnCanvas(drawingCanvas,
+@@ -83,9 +86,13 @@
+     }
+ 
+     public void drawResourceOnCanvas(Canvas canvas, int r) {
++        drawResourceOnCanvas(canvas, r, 1);
++    }
++
++    public void drawResourceOnCanvas(Canvas canvas, int r, float scale) {
+         Drawable drawable = mResources.getDrawable(r);
+         drawable.setBounds(0, 0,
+-                (int)BattleGrid.SQUARESIZE_X, (int)BattleGrid.SQUARESIZE_Y);
++                (int)(BattleGrid.SQUARESIZE_X * scale), (int)(BattleGrid.SQUARESIZE_Y * scale));
+         drawable.draw(canvas);
+     }
+ }
+diff --git a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/UnitStats/UnitStats.java b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/UnitStats/UnitStats.java
+--- a/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/UnitStats/UnitStats.java
++++ b/app/src/main/java/com/android/jprevoe/wizarddefense/Actor/UnitStats/UnitStats.java
+@@ -48,7 +48,7 @@
+         Paint paint = new Paint();
+ 
+         GridDrawer.drawImage(canvas,
+-                UnitSpriteCreator.get().createFromFullImage(getCurrentAnimationFrame(spriteState)),
++                UnitSpriteCreator.get().createFromFullImage(getCurrentAnimationFrame(spriteState), 2),
+                 mUnit.getPosition().x + mUnit.getAnimationOffset().x,
+                 mUnit.getPosition().y + mUnit.getAnimationOffset().y,
+                 paint,

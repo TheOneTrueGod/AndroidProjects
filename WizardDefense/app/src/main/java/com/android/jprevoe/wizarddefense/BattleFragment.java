@@ -1,0 +1,114 @@
+package com.android.jprevoe.wizarddefense;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.GestureDetectorCompat;
+import android.util.Log;
+import android.view.GestureDetector;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+
+import com.android.jprevoe.wizarddefense.Actor.UnitFactory;
+import com.android.jprevoe.wizarddefense.Actor.UnitStats.UnitSpriteCreator;
+import com.android.jprevoe.wizarddefense.Battle.Battle;
+import com.android.jprevoe.wizarddefense.Grid.BattleGrid;
+import com.android.jprevoe.wizarddefense.Spells.PlayerSpellList;
+import com.android.jprevoe.wizarddefense.Spells.Projectiles.ProjectileAnimations;
+import com.android.jprevoe.wizarddefense.Spells.SpellHolder;
+import com.android.jprevoe.wizarddefense.UI.AbilityListAdapter;
+import com.android.jprevoe.wizarddefense.UI.SpriteLoader;
+
+/**
+ * Created by jprevoe on 5/1/15.
+ */
+public class BattleFragment extends Fragment {
+    private SpellHolder mSpellHolder;
+    private PlayerSpellList mPlayerSpellList;
+    private BattleActivity mActivity;
+
+    public static BattleFragment newInstance(BattleActivity battleActivity) {
+        return new BattleFragment();
+    }
+    private Battle mBattle;
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater,
+                             @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
+        BattleGrid.SetDPI(getResources().getDisplayMetrics().density);
+
+        View mainContainer = inflater.inflate(R.layout.battle_view, container, false);
+
+        UnitSpriteCreator.setContext(mainContainer.getContext());
+        UnitSpriteCreator.setResources(mainContainer.getContext().getResources());
+        SpriteLoader.setContext(mainContainer.getContext());
+
+        mPlayerSpellList = PlayerSpellList.getSpellList();
+        LinearLayout mainView = ((LinearLayout) mainContainer.findViewById(R.id.main_view));
+        View v = new MainView(getActivity());
+        MainViewOnClickListener clickListener = new MainViewOnClickListener();
+        v.setOnTouchListener(clickListener);
+        v.setSoundEffectsEnabled(false);
+
+        initialize(v);
+        mainView.addView(v, 0);
+
+        mSpellHolder =
+                (SpellHolder) mainContainer.findViewById(R.id.spells_list_view);
+
+        mSpellHolder.initialize(inflater, container, mPlayerSpellList, v);
+        mSpellHolder.bringToFront();
+        //abilityListView.setAdapter(new AbilityListAdapter());
+
+        return mainContainer;
+    }
+
+    private void initialize(View v) {
+        mBattle = new Battle(v);
+        ProjectileAnimations.setResources(getResources());
+        SpriteLoader.setResources(getResources());
+
+        mBattle.initialize(mActivity);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mBattle.onDestroy();
+    }
+
+    public void setActivity(BattleActivity battleActivity) {
+        mActivity = battleActivity;
+    }
+
+    public class MainView extends View {
+        public MainView(Context context) {
+            super(context);
+        }
+
+        @Override
+        protected void onDraw(Canvas canvas) {
+            super.onDraw(canvas);
+            mBattle.drawOnCanvas(canvas, getContext());
+        }
+    }
+
+    private class MainViewOnClickListener implements View.OnTouchListener {
+        @Override
+        public boolean onTouch(View v, MotionEvent event) {
+            if (mBattle.isTurnBeingTaken() == false) {
+                mBattle.handleClick(event);
+                return true;
+            }
+            return true;
+        }
+    }
+}

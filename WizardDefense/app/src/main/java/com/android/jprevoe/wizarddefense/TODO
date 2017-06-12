@@ -1,0 +1,103 @@
+Teleport to heart button (Cooldown?  Can only be used when the heart has taken damage?)
+You and enemies can attack backwards or sideways
+
+Make 'dagger' take 0 turns to use
+
+-DONE- Make turns last until everyone is done acting,
+-DONE- Add a "hurt" animation to enemies
+-DONE- Switch 'danger' icon to a yellow exclamation mark (2 turns) and a red exclamation mark (1 turn)
+
+NEW ENEMIES
+Knight -- After getting hit for a certain amount of damage, he loses his armour and becomes a regular enemy
+Quill Beast -- Ranged attack shoots quills into the ground in a 3x3 square centered on you.  Stepping onto a quill square does 1 damage.
+Fire Mage -- Shoots two projectiles at random positions in a + sign around his intended target.
+Ninja -- His ranged attack teleports him in front of you and then attacks you.  If you aren't in his targetting reticule then he isn't forced to commit to the attack.
+
+NEW SKILLS
+Spirit Ball -- large 3x1 orb that travels straight forward.  Hits 4 times and then goes away.
+
+MAYBES
+Have different resources be accumulated different ways;
+Fire resource:  "Burning" spells by discarding them
+Physical resource: Only built up by using a skill that gives you it.
+
+
+10. Enemy Polish
+10.3 - Order enemies so they take their turns from top to bottom
+10.5 - Extract Movement AI functionality into an AI class
+10.7 - Idle animations?
+10.9 - The enemies need to move more intelligently and attack more intelligently.  Refactor that code.
+
+11. Animation
+11.1 - Make the enemies do a little "hop" animation
+11.1.1 - Give the enemies a shadow
+11.2 - Figure out if you can skip the animations
+
+12. You
+12.1 - Queue up your actions if you click during a turn
+12.2 - Add art for you
+12.7 - Spells that take more than one turn to cast
+
+
+
+-DONE-1.1 Make enemies movement respect each others position on the grid
+-DONE-2.1 - Extract movement functionality into an 'ability' class
+-DONE-2.1.1 - Slow Enemy -- moves every other turn
+-DONE-2.1.2 - Fast Enemy -- moves twice in a turn
+-DONE-2.1.3 - Smart Enemy -- moves around allies
+-Done- 3.3 - Make stuff happen halfway through animations
+-Done- 4.1 - Add a special unit for yourself
+-Done- 4.2 - Add in movement controls
+-Done- 4.3 - Get the enemies to attack you when you're close
+-Done- 4.5 - Make it so your turn is distinct from the enemies turn -- I.E. you move then the enemies all move together
+-Done- 5.1 - Cache the background's view drawing thing
+-Done- 5.2 - Draw the castle
+-Done- 5.3 - Get the enemies to attack the castle
+-Done- 6.1 Basic Attacks
+-Done- 6.2 Multi-turn Abilities
+-Done- 6.3 Forecasting Abilities
+-DONE- 7.1  Move the turn stuff out of battleFragment and into a TurnHandler
+-Done- 8.1 - List of spells on the bottom
+-Done- 8.1.1 - Four different spells that are slotted into the list (They can all do the same thing for now)
+-Done- 8.2 - Movement ability
+-Done- 8.3 - Able to select spell or movement
+-Done- 8.4 - Touch-and-release to use spell
+-DONE- Build character image from pieces
+-DONE- Add projectiles
+-DONE-10.1 - Make a "spawn zone" off the bottom of the screen where enemies can spawn in
+-DONE-10.4 - Animate enemies spawning
+-DONE-10.6 - Show enemies health
+-DONE-10.8 - Spawn enemies in waves instead of randomly individually (Make a spawn map or some'n)
+-DONE-11.3 - Add 'effects', such as a slash when hitting with a melee weapon
+-DONE-12.3 - Show your health somewhere on screen
+-DONE-12.4 - Create effects for the remaining two spells
+-DONE-12.5 - When you use a spell, you should lose it and the spells should shift down
+-DONE-12.6 - When you select a spell, show the area that it's castable in
+-DONE-13.1 - Terrain movement penalties.  Roads are easy to move along.  Grass is harder.  Water is hardest
+
+
+
+
+IDEAS
+--Enemies--
+Spider - Every few turns it lays eggs behind it.  The eggs are easy to kill, but if you don't deal with them they hatch into smaller spiders
+Splitter - Large enemy (4x4).  When it dies, it splits into 2-4 smaller versions of itself.
+Black Hole Enemy -- If a projectile would go to a square adjacent to it, that projectile instead targets this enemy's square
+Bunnysaurus - Reuse my bunny sprite from my other game.  As it is walking, it eats nearby enemies and lays eggs when it does so. Eggs hatch into small bunnies.
+
+
+--Spells--
+Triangle Blast.  Target square is X range directly left or directly right of you.
+  When you cast it, one projectile spawns at your target, and one spawns on the other side of you.
+  The two projectiles travel in a line towards directly in front of you.
+
+Rock Spikes - small spikes erupt from the ground in a line towards your target, dealing 1 damage on the way.
+  When they hit your target, a giant spike erupts dealing more damage to the single square, and the 8 squares around
+  the target get filled with "caltrops", which damage enemies entering them.
+
+Skating Rink - Damages enemies in a 3x3 area.  Freezes any water or grass tiles in that area.
+  When an enemy walks onto those squares, they are knocked down.
+
+--Mechanics--
+Instead of moving around the map, make it so you cast out of "crystals" that are around the map.
+ Each crystal can cast a spell independently of the others

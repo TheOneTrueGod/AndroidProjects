@@ -1,0 +1,5 @@
+syntax: glob
+.gradle/**
+app/build/**
+.idea/**
+build/**

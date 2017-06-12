@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="@color/black"
+    >
+    <RelativeLayout
+        android:id="@+id/background_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/card_background_weapon"
+        >
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="This is the title"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@drawable/card_title_background"
+            />
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/card_title"
+            android:background="@color/black"
+            />
+        <LinearLayout
+            android:id="@+id/mana_cost_container"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/card_title_background"
+            />
+    </RelativeLayout>
+</FrameLayout>
